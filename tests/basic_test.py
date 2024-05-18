@@ -22,3 +22,25 @@ def test_helper():
         "Name: Jane, test",
         {"testf": _test_helper}
     )
+
+def test_cases():
+    directory = os.path.join(
+        os.path.dirname(__file__),
+        "test_cases"
+    )
+        
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        if filename.endswith(".json"): 
+            with open(os.path.join(directory, file), "rt") as f:
+                cases = json.load(f)
+                for case in cases:
+                    #print(case[0])
+                    _run_test(
+                        case[0],
+                        case[1],
+                        case[2]
+                    )
+            continue
+        else:
+            continue
