@@ -13,7 +13,6 @@ set_global_object(var)
 # workaround: define the missing variables
 @Js
 def __defineGetter__(key, func):
-    print(key)
     var.get('Object').get('prototype').put(str(key), func)
 __defineGetter__._set_name('__defineGetter__')
 var.get('Object').get('prototype').put('__defineGetter__', __defineGetter__)
