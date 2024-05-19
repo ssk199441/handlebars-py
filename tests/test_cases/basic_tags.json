@@ -1,23 +1,23 @@
 [
-    [
-        "{{! This is comment}}",
-        [],
-        ""
-    ],
-    [
-        "{{data}}",
-        {
+    {
+        "template": "{{! This is comment}}",
+        "data":[],
+        "result":""
+    },
+    {
+        "template": "{{data}}",
+        "data":{
             "data": "result"
         },
-        "result"
-    ],
-    [
-        "{{data.key}}",
-        {
+        "result":"result"
+    },
+    {
+        "template": "{{data.key}}",
+        "data":{
             "data": {
                 "key": "result"
             }
         },
-        "result"
-    ]
+        "result":"result"
+    }
 ]

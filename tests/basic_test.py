@@ -5,12 +5,12 @@ import os
 from handlebars import Handlebars
 
 
-def _run_test(template, data, expected, helpers={}):
+def _run_test(template, data, expected_result, helpers={}):
     for helper_key, helper_func in helpers.items():
         Handlebars.registerHelper(helper_key, helper_func)
     template = Handlebars.compile(template)
     actual = template(data)
-    assert actual == expected
+    assert actual == expected_result
 
 def _test_helper():
     return "test"
@@ -37,9 +37,9 @@ def test_cases():
                 for case in cases:
                     #print(case[0])
                     _run_test(
-                        case[0],
-                        case[1],
-                        case[2]
+                        case["template"],
+                        case["data"],
+                        case["result"]
                     )
             continue
         else:

@@ -1,44 +1,44 @@
 [
-    [
-        "{{#if data}}Yes{{/if}}",
-        {
+    {
+        "template": "{{#if data}}Yes{{/if}}",
+        "data": {
             "data": true
         },
-        "Yes"
-    ],
-    [
-        "{{#if data}}Yes{{/if}}",
-        {
+        "result": "Yes"
+    },
+    {
+        "template": "{{#if data}}Yes{{/if}}",
+        "data": {
             "data": false
         },
-        ""
-    ],
-    [
-        "{{#unless data}}OK{{/unless}}",
-        {
+        "result": ""
+    },
+    {
+        "template": "{{#unless data}}OK{{/unless}}",
+        "data": {
             "data": false
         },
-        "OK"
-    ],
-    [
-        "{{#unless data}}OK {{else}}I believe{{/unless}}",
-        {
+        "result": "OK"
+    },
+    {
+        "template": "{{#unless data}}OK {{else}}I believe{{/unless}}",
+        "data": {
             "data": true
         },
-        "I believe"
-    ],
-    [
-        "{{#with data}}{{key}}{{/with}}",
-        {
+        "result": "I believe"
+    },
+    {
+        "template": "{{#with data}}{{key}}{{/with}}",
+        "data": {
             "data": {
                 "key": "result"
             }
         },
-        "result"
-    ],
-    [
-        "{{#each data}}{{this}}{{/each}}",
-        {
+        "result": "result"
+    },
+    {
+        "template": "{{#each data}}{{this}}{{/each}}",
+        "data": {
             "data": [
                 1,
                 2,
@@ -46,6 +46,6 @@
                 4
             ]
         },
-        "1234"
-    ]
+        "result": "1234"
+    }
 ]
