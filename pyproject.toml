@@ -24,7 +24,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "js2py",
+    "js2py-wheel",
 ]
 [project.optional-dependencies]
 dev = [

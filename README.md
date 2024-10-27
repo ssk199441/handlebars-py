@@ -17,3 +17,8 @@ template({ "name": "Jane" })
 ```bash
 pip install -e .[dev]
 ```
+
+### Test
+```bash
+pytest
+```
