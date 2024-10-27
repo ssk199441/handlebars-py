@@ -29,7 +29,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_1_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_handlebarsRuntime2', 'module', '_interopRequireDefault', '_handlebarsCompilerAst2', '_handlebarsCompilerJavascriptCompiler2', '_handlebarsCompilerBase', '_handlebarsRuntime', '_handlebarsCompilerVisitor2', '_handlebarsNoConflict', '__webpack_require__', '_create', '_handlebarsNoConflict2', 'exports', 'create', '_handlebarsCompilerVisitor', 'inst', '_handlebarsCompilerAst', '_handlebarsCompilerCompiler', '_handlebarsCompilerJavascriptCompiler'])
+            var.registers(['_handlebarsCompilerAst2', '_handlebarsRuntime', 'exports', 'create', '_handlebarsNoConflict2', '__webpack_require__', '_handlebarsCompilerVisitor2', '_handlebarsNoConflict', 'inst', '_handlebarsCompilerJavascriptCompiler', '_handlebarsRuntime2', '_handlebarsCompilerJavascriptCompiler2', '_handlebarsCompilerCompiler', '_handlebarsCompilerBase', '_interopRequireDefault', '_create', '_handlebarsCompilerAst', '_handlebarsCompilerVisitor', 'module'])
             @Js
             def PyJsHoisted_create_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
@@ -100,7 +100,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_6_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_handlebarsSafeString', 'module', 'Utils', 'runtime', '_handlebarsBase', '_interopRequireDefault', '_handlebarsException', '_handlebarsSafeString2', '_handlebarsRuntime', '_handlebarsException2', '_interopRequireWildcard', '_handlebarsNoConflict', '__webpack_require__', '_handlebarsUtils', '_handlebarsNoConflict2', 'exports', 'create', 'inst', 'base'])
+            var.registers(['_handlebarsBase', 'runtime', '_handlebarsRuntime', 'base', 'exports', '_interopRequireWildcard', 'create', '_handlebarsSafeString2', '_handlebarsNoConflict2', '_handlebarsException2', '__webpack_require__', '_handlebarsSafeString', '_handlebarsNoConflict', 'inst', '_handlebarsException', '_interopRequireDefault', '_handlebarsUtils', 'Utils', 'module'])
             @Js
             def PyJsHoisted_create_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
@@ -154,7 +154,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_9_(obj, this, arguments, var=var):
                 var = Scope({'obj':obj, 'this':this, 'arguments':arguments}, var)
-                var.registers(['obj', 'key', 'newObj'])
+                var.registers(['newObj', 'obj', 'key'])
                 if (var.get('obj') and var.get('obj').get('__esModule')):
                     return var.get('obj')
                 else:
@@ -173,11 +173,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_10_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_logger', '_internalProtoAccess', 'LAST_COMPATIBLE_COMPILER_REVISION', 'module', 'HandlebarsEnvironment', '_interopRequireDefault', '_exception2', '_helpers', 'objectType', '_utils', 'log', '__webpack_require__', 'REVISION_CHANGES', '_decorators', 'exports', 'VERSION', '_logger2', '_exception', 'COMPILER_REVISION'])
+            var.registers(['objectType', '_logger2', 'VERSION', '_logger', '_decorators', '_helpers', 'exports', 'HandlebarsEnvironment', '_exception', 'log', '_internalProtoAccess', '__webpack_require__', '_utils', 'LAST_COMPATIBLE_COMPILER_REVISION', '_interopRequireDefault', 'REVISION_CHANGES', 'module', '_exception2', 'COMPILER_REVISION'])
             @Js
             def PyJsHoisted_HandlebarsEnvironment_(helpers, partials, decorators, this, arguments, var=var):
                 var = Scope({'helpers':helpers, 'partials':partials, 'decorators':decorators, 'this':this, 'arguments':arguments}, var)
-                var.registers(['decorators', 'helpers', 'partials'])
+                var.registers(['partials', 'helpers', 'decorators'])
                 var.get(u"this").put('helpers', (var.get('helpers') or Js({})))
                 var.get(u"this").put('partials', (var.get('partials') or Js({})))
                 var.get(u"this").put('decorators', (var.get('decorators') or Js({})))
@@ -211,7 +211,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_registerHelper_11_(name, fn, this, arguments, var=var):
                     var = Scope({'name':name, 'fn':fn, 'this':this, 'arguments':arguments, 'registerHelper':PyJs_registerHelper_11_}, var)
-                    var.registers(['name', 'fn'])
+                    var.registers(['fn', 'name'])
                     if PyJsStrictEq(var.get('_utils').get('toString').callprop('call', var.get('name')),var.get('objectType')):
                         if var.get('fn'):
                             PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('Arg not supported with multiple helpers')))
@@ -229,7 +229,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_registerPartial_13_(name, partial, this, arguments, var=var):
                     var = Scope({'name':name, 'partial':partial, 'this':this, 'arguments':arguments, 'registerPartial':PyJs_registerPartial_13_}, var)
-                    var.registers(['partial', 'name'])
+                    var.registers(['name', 'partial'])
                     if PyJsStrictEq(var.get('_utils').get('toString').callprop('call', var.get('name')),var.get('objectType')):
                         var.get('_utils').callprop('extend', var.get(u"this").get('partials'), var.get('name'))
                     else:
@@ -247,7 +247,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_registerDecorator_15_(name, fn, this, arguments, var=var):
                     var = Scope({'name':name, 'fn':fn, 'this':this, 'arguments':arguments, 'registerDecorator':PyJs_registerDecorator_15_}, var)
-                    var.registers(['name', 'fn'])
+                    var.registers(['fn', 'name'])
                     if PyJsStrictEq(var.get('_utils').get('toString').callprop('call', var.get('name')),var.get('objectType')):
                         if var.get('fn'):
                             PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('Arg not supported with multiple decorators')))
@@ -278,7 +278,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_19_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['escapeExpression', 'appendContextPath', 'escape', 'exports', 'badChars', 'escapeChar', 'isEmpty', 'toString', 'indexOf', 'isFunction', 'isArray', 'module', 'extend', 'possible', 'blockParams', 'createFrame'])
+            var.registers(['createFrame', 'escape', 'appendContextPath', 'isEmpty', 'escapeExpression', 'indexOf', 'possible', 'isArray', 'extend', 'toString', 'badChars', 'escapeChar', 'isFunction', 'module', 'blockParams', 'exports'])
             @Js
             def PyJsHoisted_escapeChar_(chr, this, arguments, var=var):
                 var = Scope({'chr':chr, 'this':this, 'arguments':arguments}, var)
@@ -289,7 +289,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_extend_(obj, this, arguments, var=var):
                 var = Scope({'obj':obj, 'this':this, 'arguments':arguments}, var)
-                var.registers(['obj', 'key', 'i'])
+                var.registers(['obj', 'i', 'key'])
                 #for JS loop
                 var.put('i', Js(1.0))
                 while (var.get('i')<var.get('arguments').get('length')):
@@ -305,7 +305,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_indexOf_(array, value, this, arguments, var=var):
                 var = Scope({'array':array, 'value':value, 'this':this, 'arguments':arguments}, var)
-                var.registers(['len', 'array', 'i', 'value'])
+                var.registers(['array', 'i', 'len', 'value'])
                 #for JS loop
                 var.put('i', Js(0.0))
                 var.put('len', var.get('array').get('length'))
@@ -352,7 +352,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_createFrame_(object, this, arguments, var=var):
                 var = Scope({'object':object, 'this':this, 'arguments':arguments}, var)
-                var.registers(['frame', 'object'])
+                var.registers(['object', 'frame'])
                 var.put('frame', var.get('extend')(Js({}), var.get('object')))
                 var.get('frame').put('_parent', var.get('object'))
                 return var.get('frame')
@@ -361,7 +361,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_blockParams_(params, ids, this, arguments, var=var):
                 var = Scope({'params':params, 'ids':ids, 'this':this, 'arguments':arguments}, var)
-                var.registers(['ids', 'params'])
+                var.registers(['params', 'ids'])
                 var.get('params').put('path', var.get('ids'))
                 return var.get('params')
             PyJsHoisted_blockParams_.func_name = 'blockParams'
@@ -423,11 +423,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_23_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'Exception', 'module', '_Object$defineProperty', 'errorProps', '__webpack_require__'])
+            var.registers(['__webpack_require__', 'errorProps', '_Object$defineProperty', 'module', 'exports', 'Exception'])
             @Js
             def PyJsHoisted_Exception_(message, node, this, arguments, var=var):
                 var = Scope({'message':message, 'node':node, 'this':this, 'arguments':arguments}, var)
-                var.registers(['endLineNumber', 'tmp', 'loc', 'idx', 'column', 'endColumn', 'message', 'line', 'node'])
+                var.registers(['endLineNumber', 'line', 'endColumn', 'column', 'tmp', 'node', 'loc', 'message', 'idx'])
                 var.put('loc', (var.get('node') and var.get('node').get('loc')))
                 var.put('line', var.get('undefined'))
                 var.put('endLineNumber', var.get('undefined'))
@@ -459,16 +459,16 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                             var.get(u"this").put('column', var.get('column'))
                             var.get(u"this").put('endColumn', var.get('endColumn'))
                 except PyJsException as PyJsTempException:
-                    PyJsHolder_6e6f70_26757802 = var.own.get('nop')
+                    PyJsHolder_6e6f70_86886291 = var.own.get('nop')
                     var.force_own_put('nop', PyExceptionToJs(PyJsTempException))
                     try:
                         pass
                     finally:
-                        if PyJsHolder_6e6f70_26757802 is not None:
-                            var.own['nop'] = PyJsHolder_6e6f70_26757802
+                        if PyJsHolder_6e6f70_86886291 is not None:
+                            var.own['nop'] = PyJsHolder_6e6f70_86886291
                         else:
                             del var.own['nop']
-                        del PyJsHolder_6e6f70_26757802
+                        del PyJsHolder_6e6f70_86886291
             PyJsHoisted_Exception_.func_name = 'Exception'
             var.put('Exception', PyJsHoisted_Exception_)
             Js('use strict')
@@ -494,7 +494,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_defineProperty_26_(it, key, desc, this, arguments, var=var):
                 var = Scope({'it':it, 'key':key, 'desc':desc, 'this':this, 'arguments':arguments, 'defineProperty':PyJs_defineProperty_26_}, var)
-                var.registers(['key', 'it', 'desc'])
+                var.registers(['it', 'key', 'desc'])
                 return var.get('$').callprop('setDesc', var.get('it'), var.get('key'), var.get('desc'))
             PyJs_defineProperty_26_._set_name('defineProperty')
             var.get('module').put('exports', PyJs_defineProperty_26_)
@@ -511,7 +511,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_29_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['moveHelperToHooks', '_helpersLog2', 'module', '_helpersEach2', '_helpersHelperMissing', '_interopRequireDefault', '_helpersLog', '_helpersWith2', '_helpersIf2', 'registerDefaultHelpers', '_helpersHelperMissing2', '_helpersIf', '_helpersLookup', '_helpersEach', '__webpack_require__', '_helpersWith', '_helpersLookup2', 'exports', '_helpersBlockHelperMissing2', '_helpersBlockHelperMissing'])
+            var.registers(['_helpersEach2', 'exports', '_helpersIf2', '_helpersEach', '_helpersLog', '_helpersHelperMissing2', '_helpersBlockHelperMissing2', '__webpack_require__', '_helpersLog2', '_helpersBlockHelperMissing', 'moveHelperToHooks', '_helpersIf', '_helpersWith', '_interopRequireDefault', '_helpersLookup', '_helpersHelperMissing', '_helpersWith2', 'registerDefaultHelpers', 'module', '_helpersLookup2'])
             @Js
             def PyJsHoisted_registerDefaultHelpers_(instance, this, arguments, var=var):
                 var = Scope({'instance':instance, 'this':this, 'arguments':arguments}, var)
@@ -528,7 +528,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_moveHelperToHooks_(instance, helperName, keepHelper, this, arguments, var=var):
                 var = Scope({'instance':instance, 'helperName':helperName, 'keepHelper':keepHelper, 'this':this, 'arguments':arguments}, var)
-                var.registers(['keepHelper', 'helperName', 'instance'])
+                var.registers(['helperName', 'keepHelper', 'instance'])
                 if var.get('instance').get('helpers').get(var.get('helperName')):
                     var.get('instance').get('hooks').put(var.get('helperName'), var.get('instance').get('helpers').get(var.get('helperName')))
                     if var.get('keepHelper').neg():
@@ -560,7 +560,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_30_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'exports', '__webpack_require__', '_utils'])
+            var.registers(['module', '__webpack_require__', '_utils', 'exports'])
             Js('use strict')
             var.get('exports').put('__esModule', Js(True))
             var.put('_utils', var.get('__webpack_require__')(Js(5.0)))
@@ -571,7 +571,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_32_(context, options, this, arguments, var=var):
                     var = Scope({'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['context', 'fn', 'data', 'inverse', 'options'])
+                    var.registers(['options', 'data', 'inverse', 'context', 'fn'])
                     var.put('inverse', var.get('options').get('inverse'))
                     var.put('fn', var.get('options').get('fn'))
                     if PyJsStrictEq(var.get('context'),Js(True)):
@@ -602,7 +602,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_33_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_interopRequireDefault', '_Symbol$iterator', 'exports', '_exception2', '_getIterator', 'module', '_exception', '_Object$keys', '_utils', '_Symbol', '__webpack_require__'])
+            var.registers(['_exception2', '_Symbol', '_exception', 'exports', '__webpack_require__', '_Symbol$iterator', '_getIterator', '_interopRequireDefault', '_utils', 'module', '_Object$keys'])
             Js('use strict')
             var.put('_Symbol', var.get('__webpack_require__')(Js(13.0)).get('default'))
             var.put('_Symbol$iterator', var.get('__webpack_require__')(Js(43.0)).get('default'))
@@ -620,11 +620,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_35_(context, options, this, arguments, var=var):
                     var = Scope({'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['context', 'execIteration', 'j', 'i', 'contextPath', 'fn', 'iterator', 'inverse', 'newContext', 'it', 'options', 'ret', 'data'])
+                    var.registers(['contextPath', 'data', 'inverse', 'options', 'ret', 'execIteration', 'context', 'j', 'newContext', 'i', 'fn', 'it', 'iterator'])
                     @Js
                     def PyJsHoisted_execIteration_(field, index, last, this, arguments, var=var):
                         var = Scope({'field':field, 'index':index, 'last':last, 'this':this, 'arguments':arguments}, var)
-                        var.registers(['last', 'field', 'index'])
+                        var.registers(['index', 'field', 'last'])
                         if var.get('data'):
                             var.get('data').put('key', var.get('field'))
                             var.get('data').put('index', var.get('index'))
@@ -723,7 +723,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_40_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['shared', 'global', 'keyOf', 'symbolStatics', '$defineProperties', 'HIDDEN', '$getOwnPropertyDescriptor', '$export', 'DESCRIPTORS', 'module', 'anObject', 'getNames', 'SymbolRegistry', '$stringify', 'AllSymbols', '$getOwnPropertySymbols', 'setToStringTag', '$defineProperty', '$create', '$Symbol', '$names', 'uid', 'isArray', 'toIObject', 'redefine', 'wrap', 'has', '$propertyIsEnumerable', '__webpack_require__', '$', '_create', 'setSymbolDesc', 'setDesc', 'getDesc', 'setter', '$getOwnPropertyNames', 'enumKeys', '$fails', 'isSymbol', 'exports', '$JSON', 'createDesc', 'buggyJSON', 'isEnum', 'ObjectProto', 'wks', '_stringify', 'useNative'])
+            var.registers(['getDesc', 'AllSymbols', 'createDesc', 'SymbolRegistry', 'wrap', 'global', 'wks', '$fails', 'toIObject', 'enumKeys', 'isEnum', 'setter', 'useNative', 'exports', 'ObjectProto', 'keyOf', '$defineProperties', 'anObject', 'uid', '_stringify', 'setDesc', '$propertyIsEnumerable', 'has', 'setToStringTag', '$names', '__webpack_require__', 'buggyJSON', '$getOwnPropertyNames', 'HIDDEN', '$getOwnPropertySymbols', '$getOwnPropertyDescriptor', 'shared', 'isArray', 'isSymbol', 'setSymbolDesc', '$create', 'getNames', 'redefine', '$Symbol', '$stringify', '_create', '$defineProperty', '$', 'DESCRIPTORS', 'symbolStatics', '$export', 'module', '$JSON'])
             Js('use strict')
             var.put('$', var.get('__webpack_require__')(Js(9.0)))
             var.put('global', var.get('__webpack_require__')(Js(16.0)))
@@ -760,7 +760,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_41_(it, key, D, this, arguments, var=var):
                 var = Scope({'it':it, 'key':key, 'D':D, 'this':this, 'arguments':arguments}, var)
-                var.registers(['protoDesc', 'it', 'D', 'key'])
+                var.registers(['D', 'protoDesc', 'it', 'key'])
                 var.put('protoDesc', var.get('getDesc')(var.get('ObjectProto'), var.get('key')))
                 if var.get('protoDesc'):
                     var.get('ObjectProto').delete(var.get('key'))
@@ -809,7 +809,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_defineProperty_47_(it, key, D, this, arguments, var=var):
                 var = Scope({'it':it, 'key':key, 'D':D, 'this':this, 'arguments':arguments, 'defineProperty':PyJs_defineProperty_47_}, var)
-                var.registers(['key', 'it', 'D'])
+                var.registers(['D', 'it', 'key'])
                 if (var.get('D') and var.get('has')(var.get('AllSymbols'), var.get('key'))):
                     if var.get('D').get('enumerable').neg():
                         if var.get('has')(var.get('it'), var.get('HIDDEN')).neg():
@@ -826,7 +826,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_defineProperties_48_(it, P, this, arguments, var=var):
                 var = Scope({'it':it, 'P':P, 'this':this, 'arguments':arguments, 'defineProperties':PyJs_defineProperties_48_}, var)
-                var.registers(['keys', 'l', 'i', 'P', 'key', 'it'])
+                var.registers(['keys', 'i', 'P', 'l', 'it', 'key'])
                 var.get('anObject')(var.get('it'))
                 var.put('keys', var.get('enumKeys')(var.put('P', var.get('toIObject')(var.get('P')))))
                 var.put('i', Js(0.0))
@@ -839,7 +839,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_create_49_(it, P, this, arguments, var=var):
                 var = Scope({'it':it, 'P':P, 'this':this, 'arguments':arguments, 'create':PyJs_create_49_}, var)
-                var.registers(['it', 'P'])
+                var.registers(['P', 'it'])
                 return (var.get('_create')(var.get('it')) if PyJsStrictEq(var.get('P'),var.get('undefined')) else var.get('$defineProperties')(var.get('_create')(var.get('it')), var.get('P')))
             PyJs_create_49_._set_name('create')
             var.put('$create', PyJs_create_49_)
@@ -854,7 +854,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_getOwnPropertyDescriptor_51_(it, key, this, arguments, var=var):
                 var = Scope({'it':it, 'key':key, 'this':this, 'arguments':arguments, 'getOwnPropertyDescriptor':PyJs_getOwnPropertyDescriptor_51_}, var)
-                var.registers(['key', 'it', 'D'])
+                var.registers(['D', 'it', 'key'])
                 var.put('D', var.get('getDesc')(var.put('it', var.get('toIObject')(var.get('it'))), var.get('key')))
                 if ((var.get('D') and var.get('has')(var.get('AllSymbols'), var.get('key'))) and (var.get('has')(var.get('it'), var.get('HIDDEN')) and var.get('it').get(var.get('HIDDEN')).get(var.get('key'))).neg()):
                     var.get('D').put('enumerable', Js(True))
@@ -864,7 +864,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_getOwnPropertyNames_52_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments, 'getOwnPropertyNames':PyJs_getOwnPropertyNames_52_}, var)
-                var.registers(['i', 'key', 'it', 'names', 'result'])
+                var.registers(['i', 'names', 'it', 'key', 'result'])
                 var.put('names', var.get('getNames')(var.get('toIObject')(var.get('it'))))
                 var.put('result', Js([]))
                 var.put('i', Js(0.0))
@@ -877,7 +877,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_getOwnPropertySymbols_53_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments, 'getOwnPropertySymbols':PyJs_getOwnPropertySymbols_53_}, var)
-                var.registers(['i', 'key', 'it', 'names', 'result'])
+                var.registers(['i', 'names', 'it', 'key', 'result'])
                 var.put('names', var.get('getNames')(var.get('toIObject')(var.get('it'))))
                 var.put('result', Js([]))
                 var.put('i', Js(0.0))
@@ -890,7 +890,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_stringify_54_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments, 'stringify':PyJs_stringify_54_}, var)
-                var.registers(['$$', 'replacer', 'args', 'i', 'it', '$replacer'])
+                var.registers(['$$', '$replacer', 'i', 'args', 'it', 'replacer'])
                 if (PyJsStrictEq(var.get('it'),var.get('undefined')) or var.get('isSymbol')(var.get('it'))):
                     return var.get('undefined')
                 var.put('args', Js([var.get('it')]))
@@ -1005,7 +1005,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_66_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'global', 'exports'])
+            var.registers(['module', 'exports', 'global'])
             var.put('global', var.get('module').put('exports', (var.get('window') if ((var.get('window',throw=False).typeof()!=Js('undefined')) and (var.get('window').get('Math')==var.get('Math'))) else (var.get('self') if ((var.get('self',throw=False).typeof()!=Js('undefined')) and (var.get('self').get('Math')==var.get('Math'))) else var.get('Function')(Js('return this'))()))))
             if (var.get('__g',throw=False).typeof()==Js('number')):
                 var.put('__g', var.get('global'))
@@ -1013,12 +1013,12 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_67_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'hasOwnProperty', 'exports'])
+            var.registers(['hasOwnProperty', 'module', 'exports'])
             var.put('hasOwnProperty', Js({}).get('hasOwnProperty'))
             @Js
             def PyJs_anonymous_68_(it, key, this, arguments, var=var):
                 var = Scope({'it':it, 'key':key, 'this':this, 'arguments':arguments}, var)
-                var.registers(['key', 'it'])
+                var.registers(['it', 'key'])
                 return var.get('hasOwnProperty').callprop('call', var.get('it'), var.get('key'))
             PyJs_anonymous_68_._set_name('anonymous')
             var.get('module').put('exports', PyJs_anonymous_68_)
@@ -1052,23 +1052,23 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 try:
                     return var.get('exec')().neg().neg()
                 except PyJsException as PyJsTempException:
-                    PyJsHolder_65_70830041 = var.own.get('e')
+                    PyJsHolder_65_56836982 = var.own.get('e')
                     var.force_own_put('e', PyExceptionToJs(PyJsTempException))
                     try:
                         return Js(True)
                     finally:
-                        if PyJsHolder_65_70830041 is not None:
-                            var.own['e'] = PyJsHolder_65_70830041
+                        if PyJsHolder_65_56836982 is not None:
+                            var.own['e'] = PyJsHolder_65_56836982
                         else:
                             del var.own['e']
-                        del PyJsHolder_65_70830041
+                        del PyJsHolder_65_56836982
             PyJs_anonymous_73_._set_name('anonymous')
             var.get('module').put('exports', PyJs_anonymous_73_)
         PyJs_anonymous_72_._set_name('anonymous')
         @Js
         def PyJs_anonymous_74_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['PROTOTYPE', 'global', 'ctx', 'exports', 'core', '$export', 'module', '__webpack_require__'])
+            var.registers(['core', 'ctx', 'global', '__webpack_require__', '$export', 'module', 'PROTOTYPE', 'exports'])
             var.put('global', var.get('__webpack_require__')(Js(16.0)))
             var.put('core', var.get('__webpack_require__')(Js(21.0)))
             var.put('ctx', var.get('__webpack_require__')(Js(22.0)))
@@ -1076,7 +1076,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_75_(type, name, source, this, arguments, var=var):
                 var = Scope({'type':type, 'name':name, 'source':source, 'this':this, 'arguments':arguments}, var)
-                var.registers(['key', 'IS_PROTO', 'exports', 'IS_BIND', 'out', 'type', 'IS_WRAP', 'IS_FORCED', 'name', 'IS_STATIC', 'IS_GLOBAL', 'own', 'target', 'source'])
+                var.registers(['out', 'IS_PROTO', 'IS_WRAP', 'IS_GLOBAL', 'key', 'own', 'IS_STATIC', 'target', 'source', 'IS_FORCED', 'IS_BIND', 'name', 'type', 'exports'])
                 var.put('IS_FORCED', (var.get('type')&var.get('$export').get('F')))
                 var.put('IS_GLOBAL', (var.get('type')&var.get('$export').get('G')))
                 var.put('IS_STATIC', (var.get('type')&var.get('$export').get('S')))
@@ -1097,7 +1097,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                         @Js
                         def PyJs_anonymous_76_(C, this, arguments, var=var):
                             var = Scope({'C':C, 'this':this, 'arguments':arguments}, var)
-                            var.registers(['C', 'F'])
+                            var.registers(['F', 'C'])
                             @Js
                             def PyJs_anonymous_77_(param, this, arguments, var=var):
                                 var = Scope({'param':param, 'this':this, 'arguments':arguments}, var)
@@ -1125,7 +1125,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_79_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'core', 'exports'])
+            var.registers(['core', 'module', 'exports'])
             var.put('core', var.get('module').put('exports', Js({'version':Js('1.2.6')})))
             if (var.get('__e',throw=False).typeof()==Js('number')):
                 var.put('__e', var.get('core'))
@@ -1138,7 +1138,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_81_(fn, that, length, this, arguments, var=var):
                 var = Scope({'fn':fn, 'that':that, 'length':length, 'this':this, 'arguments':arguments}, var)
-                var.registers(['length', 'that', 'fn'])
+                var.registers(['fn', 'that', 'length'])
                 var.get('aFunction')(var.get('fn'))
                 if PyJsStrictEq(var.get('that'),var.get('undefined')):
                     return var.get('fn')
@@ -1159,7 +1159,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                         @Js
                         def PyJs_anonymous_83_(a, b, this, arguments, var=var):
                             var = Scope({'a':a, 'b':b, 'this':this, 'arguments':arguments}, var)
-                            var.registers(['a', 'b'])
+                            var.registers(['b', 'a'])
                             return var.get('fn').callprop('call', var.get('that'), var.get('a'), var.get('b'))
                         PyJs_anonymous_83_._set_name('anonymous')
                         return PyJs_anonymous_83_
@@ -1168,7 +1168,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                         @Js
                         def PyJs_anonymous_84_(a, b, c, this, arguments, var=var):
                             var = Scope({'a':a, 'b':b, 'c':c, 'this':this, 'arguments':arguments}, var)
-                            var.registers(['c', 'a', 'b'])
+                            var.registers(['b', 'a', 'c'])
                             return var.get('fn').callprop('call', var.get('that'), var.get('a'), var.get('b'), var.get('c'))
                         PyJs_anonymous_84_._set_name('anonymous')
                         return PyJs_anonymous_84_
@@ -1208,19 +1208,19 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_89_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'module', 'createDesc', '__webpack_require__', '$'])
+            var.registers(['createDesc', '$', '__webpack_require__', 'module', 'exports'])
             var.put('$', var.get('__webpack_require__')(Js(9.0)))
             var.put('createDesc', var.get('__webpack_require__')(Js(26.0)))
             @Js
             def PyJs_anonymous_90_(object, key, value, this, arguments, var=var):
                 var = Scope({'object':object, 'key':key, 'value':value, 'this':this, 'arguments':arguments}, var)
-                var.registers(['key', 'object', 'value'])
+                var.registers(['object', 'key', 'value'])
                 return var.get('$').callprop('setDesc', var.get('object'), var.get('key'), var.get('createDesc')(Js(1.0), var.get('value')))
             PyJs_anonymous_90_._set_name('anonymous')
             @Js
             def PyJs_anonymous_91_(object, key, value, this, arguments, var=var):
                 var = Scope({'object':object, 'key':key, 'value':value, 'this':this, 'arguments':arguments}, var)
-                var.registers(['key', 'object', 'value'])
+                var.registers(['object', 'key', 'value'])
                 var.get('object').put(var.get('key'), var.get('value'))
                 return var.get('object')
             PyJs_anonymous_91_._set_name('anonymous')
@@ -1241,7 +1241,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_94_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['global', 'exports', 'store', 'module', '__webpack_require__', 'SHARED'])
+            var.registers(['SHARED', 'global', '__webpack_require__', 'module', 'store', 'exports'])
             var.put('global', var.get('__webpack_require__')(Js(16.0)))
             var.put('SHARED', Js('__core-js_shared__'))
             var.put('store', (var.get('global').get(var.get('SHARED')) or var.get('global').put(var.get('SHARED'), Js({}))))
@@ -1256,14 +1256,14 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_96_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'module', 'def', 'has', '__webpack_require__', 'TAG'])
+            var.registers(['TAG', 'has', '__webpack_require__', 'module', 'exports', 'def'])
             var.put('def', var.get('__webpack_require__')(Js(9.0)).get('setDesc'))
             var.put('has', var.get('__webpack_require__')(Js(17.0)))
             var.put('TAG', var.get('__webpack_require__')(Js(29.0))(Js('toStringTag')))
             @Js
             def PyJs_anonymous_97_(it, tag, stat, this, arguments, var=var):
                 var = Scope({'it':it, 'tag':tag, 'stat':stat, 'this':this, 'arguments':arguments}, var)
-                var.registers(['tag', 'it', 'stat'])
+                var.registers(['it', 'stat', 'tag'])
                 if (var.get('it') and var.get('has')(var.put('it', (var.get('it') if var.get('stat') else var.get('it').get('prototype'))), var.get('TAG')).neg()):
                     var.get('def')(var.get('it'), var.get('TAG'), Js({'configurable':Js(True),'value':var.get('tag')}))
             PyJs_anonymous_97_._set_name('anonymous')
@@ -1272,7 +1272,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_98_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['uid', 'exports', 'Symbol', 'store', 'module', '__webpack_require__'])
+            var.registers(['uid', 'Symbol', '__webpack_require__', 'module', 'store', 'exports'])
             var.put('store', var.get('__webpack_require__')(Js(27.0))(Js('wks')))
             var.put('uid', var.get('__webpack_require__')(Js(30.0)))
             var.put('Symbol', var.get('__webpack_require__')(Js(16.0)).get('Symbol'))
@@ -1287,7 +1287,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_100_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['px', 'exports', 'id', 'module'])
+            var.registers(['module', 'id', 'exports', 'px'])
             var.put('id', Js(0.0))
             var.put('px', var.get('Math').callprop('random'))
             @Js
@@ -1301,13 +1301,13 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_102_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'module', 'toIObject', '__webpack_require__', '$'])
+            var.registers(['$', '__webpack_require__', 'toIObject', 'module', 'exports'])
             var.put('$', var.get('__webpack_require__')(Js(9.0)))
             var.put('toIObject', var.get('__webpack_require__')(Js(32.0)))
             @Js
             def PyJs_anonymous_103_(object, el, this, arguments, var=var):
                 var = Scope({'object':object, 'el':el, 'this':this, 'arguments':arguments}, var)
-                var.registers(['keys', 'key', 'object', 'length', 'index', 'O', 'el'])
+                var.registers(['object', 'length', 'el', 'O', 'index', 'keys', 'key'])
                 var.put('O', var.get('toIObject')(var.get('object')))
                 var.put('keys', var.get('$').callprop('getKeys', var.get('O')))
                 var.put('length', var.get('keys').get('length'))
@@ -1321,7 +1321,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_104_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'defined', 'module', 'IObject', '__webpack_require__'])
+            var.registers(['defined', '__webpack_require__', 'IObject', 'module', 'exports'])
             var.put('IObject', var.get('__webpack_require__')(Js(33.0)))
             var.put('defined', var.get('__webpack_require__')(Js(35.0)))
             @Js
@@ -1335,7 +1335,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_106_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['cof', 'module', '__webpack_require__', 'exports'])
+            var.registers(['module', '__webpack_require__', 'cof', 'exports'])
             var.put('cof', var.get('__webpack_require__')(Js(34.0)))
             @Js
             def PyJs_anonymous_107_(it, this, arguments, var=var):
@@ -1348,7 +1348,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_108_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['toString', 'module', 'exports'])
+            var.registers(['module', 'toString', 'exports'])
             var.put('toString', Js({}).get('toString'))
             @Js
             def PyJs_anonymous_109_(it, this, arguments, var=var):
@@ -1376,7 +1376,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_112_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'getWindowNames', 'toString', 'windowNames', 'toIObject', 'getNames', 'module', '__webpack_require__'])
+            var.registers(['windowNames', '__webpack_require__', 'toString', 'toIObject', 'module', 'getWindowNames', 'exports', 'getNames'])
             var.put('toIObject', var.get('__webpack_require__')(Js(32.0)))
             var.put('getNames', var.get('__webpack_require__')(Js(9.0)).get('getNames'))
             var.put('toString', Js({}).get('toString'))
@@ -1388,16 +1388,16 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 try:
                     return var.get('getNames')(var.get('it'))
                 except PyJsException as PyJsTempException:
-                    PyJsHolder_65_33827338 = var.own.get('e')
+                    PyJsHolder_65_16478779 = var.own.get('e')
                     var.force_own_put('e', PyExceptionToJs(PyJsTempException))
                     try:
                         return var.get('windowNames').callprop('slice')
                     finally:
-                        if PyJsHolder_65_33827338 is not None:
-                            var.own['e'] = PyJsHolder_65_33827338
+                        if PyJsHolder_65_16478779 is not None:
+                            var.own['e'] = PyJsHolder_65_16478779
                         else:
                             del var.own['e']
-                        del PyJsHolder_65_33827338
+                        del PyJsHolder_65_16478779
             PyJs_anonymous_113_._set_name('anonymous')
             var.put('getWindowNames', PyJs_anonymous_113_)
             @Js
@@ -1418,7 +1418,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_116_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments}, var)
-                var.registers(['keys', 'symbols', 'i', 'key', 'it', 'isEnum', 'getSymbols'])
+                var.registers(['symbols', 'getSymbols', 'i', 'isEnum', 'it', 'keys', 'key'])
                 var.put('keys', var.get('$').callprop('getKeys', var.get('it')))
                 var.put('getSymbols', var.get('$').get('getSymbols'))
                 if var.get('getSymbols'):
@@ -1435,7 +1435,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_117_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['cof', 'module', '__webpack_require__', 'exports'])
+            var.registers(['module', '__webpack_require__', 'cof', 'exports'])
             var.put('cof', var.get('__webpack_require__')(Js(34.0)))
             @Js
             def PyJs_anonymous_118_(arg, this, arguments, var=var):
@@ -1448,7 +1448,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_119_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'exports', '__webpack_require__', 'isObject'])
+            var.registers(['isObject', 'module', '__webpack_require__', 'exports'])
             var.put('isObject', var.get('__webpack_require__')(Js(40.0)))
             @Js
             def PyJs_anonymous_120_(it, this, arguments, var=var):
@@ -1502,7 +1502,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_127_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['$at', 'module', '__webpack_require__', 'exports'])
+            var.registers(['module', '__webpack_require__', '$at', 'exports'])
             Js('use strict')
             var.put('$at', var.get('__webpack_require__')(Js(46.0))(Js(True)))
             @Js
@@ -1515,7 +1515,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_129_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
-                var.registers(['point', 'O', 'index'])
+                var.registers(['O', 'index', 'point'])
                 var.put('O', var.get(u"this").get('_t'))
                 var.put('index', var.get(u"this").get('_i'))
                 if (var.get('index')>=var.get('O').get('length')):
@@ -1529,7 +1529,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_130_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'defined', 'module', '__webpack_require__', 'toInteger'])
+            var.registers(['defined', '__webpack_require__', 'toInteger', 'module', 'exports'])
             var.put('toInteger', var.get('__webpack_require__')(Js(47.0)))
             var.put('defined', var.get('__webpack_require__')(Js(35.0)))
             @Js
@@ -1539,7 +1539,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_132_(that, pos, this, arguments, var=var):
                     var = Scope({'that':that, 'pos':pos, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['l', 'a', 'i', 'pos', 'that', 'b', 's'])
+                    var.registers(['a', 'that', 'pos', 's', 'i', 'l', 'b'])
                     var.put('s', var.get('String')(var.get('defined')(var.get('that'))))
                     var.put('i', var.get('toInteger')(var.get('pos')))
                     var.put('l', var.get('s').get('length'))
@@ -1557,7 +1557,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_134_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'ceil', 'floor', 'exports'])
+            var.registers(['ceil', 'floor', 'exports', 'module'])
             var.put('ceil', var.get('Math').get('ceil'))
             var.put('floor', var.get('Math').get('floor'))
             @Js
@@ -1571,7 +1571,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_136_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['getProto', '$iterCreate', 'returnThis', 'ITERATOR', 'BUGGY', 'exports', 'hide', 'setToStringTag', '$export', 'KEYS', 'module', 'redefine', 'Iterators', 'VALUES', 'has', '__webpack_require__', 'FF_ITERATOR', 'LIBRARY'])
+            var.registers(['ITERATOR', '$iterCreate', 'returnThis', 'KEYS', 'VALUES', 'Iterators', 'getProto', 'exports', 'has', 'LIBRARY', 'setToStringTag', '__webpack_require__', 'hide', 'FF_ITERATOR', '$export', 'module', 'BUGGY', 'redefine'])
             Js('use strict')
             var.put('LIBRARY', var.get('__webpack_require__')(Js(41.0)))
             var.put('$export', var.get('__webpack_require__')(Js(20.0)))
@@ -1597,7 +1597,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_138_(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED, this, arguments, var=var):
                 var = Scope({'Base':Base, 'NAME':NAME, 'Constructor':Constructor, 'next':next, 'DEFAULT':DEFAULT, 'IS_SET':IS_SET, 'FORCED':FORCED, 'this':this, 'arguments':arguments}, var)
-                var.registers(['IS_SET', 'DEFAULT', 'getMethod', 'methods', 'key', 'proto', 'IteratorPrototype', 'NAME', 'Base', 'Constructor', 'next', 'FORCED', '$default', 'DEF_VALUES', 'VALUES_BUG', 'TAG', '$native'])
+                var.registers(['methods', 'FORCED', 'IteratorPrototype', '$default', 'next', 'TAG', 'DEF_VALUES', 'proto', 'DEFAULT', '$native', 'getMethod', 'NAME', 'IS_SET', 'Constructor', 'Base', 'key', 'VALUES_BUG'])
                 var.get('$iterCreate')(var.get('Constructor'), var.get('NAME'), var.get('next'))
                 @Js
                 def PyJs_anonymous_139_(kind, this, arguments, var=var):
@@ -1683,7 +1683,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_145_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'IteratorPrototype', 'descriptor', 'module', '__webpack_require__', '$', 'setToStringTag'])
+            var.registers(['IteratorPrototype', '$', 'setToStringTag', '__webpack_require__', 'descriptor', 'module', 'exports'])
             Js('use strict')
             var.put('$', var.get('__webpack_require__')(Js(9.0)))
             var.put('descriptor', var.get('__webpack_require__')(Js(26.0)))
@@ -1716,7 +1716,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_149_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['step', 'addToUnscopables', 'exports', 'module', 'toIObject', 'Iterators', '__webpack_require__'])
+            var.registers(['step', 'Iterators', '__webpack_require__', 'addToUnscopables', 'toIObject', 'module', 'exports'])
             Js('use strict')
             var.put('addToUnscopables', var.get('__webpack_require__')(Js(53.0)))
             var.put('step', var.get('__webpack_require__')(Js(54.0)))
@@ -1733,7 +1733,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_151_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
-                var.registers(['kind', 'O', 'index'])
+                var.registers(['O', 'kind', 'index'])
                 var.put('O', var.get(u"this").get('_t'))
                 var.put('kind', var.get(u"this").get('_k'))
                 var.put('index', (var.get(u"this").put('_i',Js(var.get(u"this").get('_i').to_number())+Js(1))-Js(1)))
@@ -1771,7 +1771,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_155_(done, value, this, arguments, var=var):
                 var = Scope({'done':done, 'value':value, 'this':this, 'arguments':arguments}, var)
-                var.registers(['value', 'done'])
+                var.registers(['done', 'value'])
                 return Js({'value':var.get('value'),'done':var.get('done').neg().neg()})
             PyJs_anonymous_155_._set_name('anonymous')
             var.get('module').put('exports', PyJs_anonymous_155_)
@@ -1793,13 +1793,13 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_158_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'module', 'anObject', '__webpack_require__', 'get'])
+            var.registers(['anObject', '__webpack_require__', 'get', 'exports', 'module'])
             var.put('anObject', var.get('__webpack_require__')(Js(39.0)))
             var.put('get', var.get('__webpack_require__')(Js(58.0)))
             @Js
             def PyJs_anonymous_159_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments}, var)
-                var.registers(['it', 'iterFn'])
+                var.registers(['iterFn', 'it'])
                 var.put('iterFn', var.get('get')(var.get('it')))
                 if (var.get('iterFn',throw=False).typeof()!=Js('function')):
                     PyJsTempException = JsToPyException(var.get('TypeError')((var.get('it')+Js(' is not iterable!'))))
@@ -1811,7 +1811,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_160_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['ITERATOR', 'exports', 'module', 'Iterators', '__webpack_require__', 'classof'])
+            var.registers(['ITERATOR', 'Iterators', '__webpack_require__', 'classof', 'module', 'exports'])
             var.put('classof', var.get('__webpack_require__')(Js(59.0)))
             var.put('ITERATOR', var.get('__webpack_require__')(Js(29.0))(Js('iterator')))
             var.put('Iterators', var.get('__webpack_require__')(Js(49.0)))
@@ -1827,7 +1827,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_162_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'cof', 'module', '__webpack_require__', 'ARG', 'TAG'])
+            var.registers(['ARG', 'TAG', 'cof', '__webpack_require__', 'module', 'exports'])
             var.put('cof', var.get('__webpack_require__')(Js(34.0)))
             var.put('TAG', var.get('__webpack_require__')(Js(29.0))(Js('toStringTag')))
             @Js
@@ -1840,7 +1840,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_164_(it, this, arguments, var=var):
                 var = Scope({'it':it, 'this':this, 'arguments':arguments}, var)
-                var.registers(['it', 'B', 'O', 'T'])
+                var.registers(['B', 'O', 'it', 'T'])
                 pass
                 def PyJs_LONG_165_(var=var):
                     return (Js('Null') if PyJsStrictEq(var.get('it'),var.get(u"null")) else (var.get('T') if (var.put('T', var.put('O', var.get('Object')(var.get('it'))).get(var.get('TAG'))).typeof()==Js('string')) else (var.get('cof')(var.get('O')) if var.get('ARG') else (Js('Arguments') if ((var.put('B', var.get('cof')(var.get('O')))==Js('Object')) and (var.get('O').get('callee').typeof()==Js('function'))) else var.get('B')))))
@@ -1883,7 +1883,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_171_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', '__webpack_require__', 'defined', 'exports'])
+            var.registers(['defined', '__webpack_require__', 'exports', 'module'])
             var.put('defined', var.get('__webpack_require__')(Js(35.0)))
             @Js
             def PyJs_anonymous_172_(it, this, arguments, var=var):
@@ -1896,14 +1896,14 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_173_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['fails', 'exports', 'core', '$export', 'module', '__webpack_require__'])
+            var.registers(['fails', 'core', '__webpack_require__', '$export', 'module', 'exports'])
             var.put('$export', var.get('__webpack_require__')(Js(20.0)))
             var.put('core', var.get('__webpack_require__')(Js(21.0)))
             var.put('fails', var.get('__webpack_require__')(Js(19.0)))
             @Js
             def PyJs_anonymous_174_(KEY, exec, this, arguments, var=var):
                 var = Scope({'KEY':KEY, 'exec':exec, 'this':this, 'arguments':arguments}, var)
-                var.registers(['exp', 'KEY', 'exec', 'fn'])
+                var.registers(['fn', 'exp', 'KEY', 'exec'])
                 var.put('fn', ((var.get('core').get('Object') or Js({})).get(var.get('KEY')) or var.get('Object').get(var.get('KEY'))))
                 var.put('exp', Js({}))
                 var.get('exp').put(var.get('KEY'), var.get('exec')(var.get('fn')))
@@ -1920,7 +1920,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_176_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_interopRequireDefault', 'exports', '_exception2', 'module', '_exception', '__webpack_require__'])
+            var.registers(['_exception', '__webpack_require__', 'module', '_exception2', '_interopRequireDefault', 'exports'])
             Js('use strict')
             var.put('_interopRequireDefault', var.get('__webpack_require__')(Js(1.0)).get('default'))
             var.get('exports').put('__esModule', Js(True))
@@ -1948,7 +1948,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_179_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_interopRequireDefault', 'exports', '_exception2', 'module', '_exception', '_utils', '__webpack_require__'])
+            var.registers(['_exception', 'exports', '__webpack_require__', 'module', '_exception2', '_interopRequireDefault', '_utils'])
             Js('use strict')
             var.put('_interopRequireDefault', var.get('__webpack_require__')(Js(1.0)).get('default'))
             var.get('exports').put('__esModule', Js(True))
@@ -1962,7 +1962,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_181_(conditional, options, this, arguments, var=var):
                     var = Scope({'conditional':conditional, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['options', 'conditional'])
+                    var.registers(['conditional', 'options'])
                     if (var.get('arguments').get('length')!=Js(2.0)):
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('#if requires exactly one argument')))
                         raise PyJsTempException
@@ -1977,7 +1977,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_182_(conditional, options, this, arguments, var=var):
                     var = Scope({'conditional':conditional, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['options', 'conditional'])
+                    var.registers(['conditional', 'options'])
                     if (var.get('arguments').get('length')!=Js(2.0)):
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('#unless requires exactly one argument')))
                         raise PyJsTempException
@@ -2001,7 +2001,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_185_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments}, var)
-                    var.registers(['level', 'options', 'args', 'i'])
+                    var.registers(['level', 'args', 'options', 'i'])
                     var.put('args', Js([var.get('undefined')]))
                     var.put('options', var.get('arguments').get((var.get('arguments').get('length')-Js(1.0))))
                     #for JS loop
@@ -2037,7 +2037,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_188_(obj, field, options, this, arguments, var=var):
                     var = Scope({'obj':obj, 'field':field, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['obj', 'options', 'field'])
+                    var.registers(['options', 'field', 'obj'])
                     if var.get('obj').neg():
                         return var.get('obj')
                     return var.get('options').callprop('lookupProperty', var.get('obj'), var.get('field'))
@@ -2050,7 +2050,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_189_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_interopRequireDefault', 'exports', '_exception2', 'module', '_exception', '_utils', '__webpack_require__'])
+            var.registers(['_exception', 'exports', '__webpack_require__', 'module', '_exception2', '_interopRequireDefault', '_utils'])
             Js('use strict')
             var.put('_interopRequireDefault', var.get('__webpack_require__')(Js(1.0)).get('default'))
             var.get('exports').put('__esModule', Js(True))
@@ -2064,7 +2064,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_191_(context, options, this, arguments, var=var):
                     var = Scope({'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['options', 'context', 'data', 'fn'])
+                    var.registers(['fn', 'options', 'data', 'context'])
                     if (var.get('arguments').get('length')!=Js(2.0)):
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('#with requires exactly one argument')))
                         raise PyJsTempException
@@ -2088,7 +2088,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_192_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['registerDefaultDecorators', '_interopRequireDefault', 'exports', '_decoratorsInline', 'module', '_decoratorsInline2', '__webpack_require__'])
+            var.registers(['_decoratorsInline2', '_decoratorsInline', '__webpack_require__', 'registerDefaultDecorators', 'module', '_interopRequireDefault', 'exports'])
             @Js
             def PyJsHoisted_registerDefaultDecorators_(instance, this, arguments, var=var):
                 var = Scope({'instance':instance, 'this':this, 'arguments':arguments}, var)
@@ -2107,7 +2107,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_193_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'exports', '__webpack_require__', '_utils'])
+            var.registers(['module', '__webpack_require__', '_utils', 'exports'])
             Js('use strict')
             var.get('exports').put('__esModule', Js(True))
             var.put('_utils', var.get('__webpack_require__')(Js(5.0)))
@@ -2118,14 +2118,14 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_195_(fn, props, container, options, this, arguments, var=var):
                     var = Scope({'fn':fn, 'props':props, 'container':container, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['container', 'fn', 'props', 'ret', 'options'])
+                    var.registers(['options', 'ret', 'props', 'fn', 'container'])
                     var.put('ret', var.get('fn'))
                     if var.get('props').get('partials').neg():
                         var.get('props').put('partials', Js({}))
                         @Js
                         def PyJs_anonymous_196_(context, options, this, arguments, var=var):
                             var = Scope({'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                            var.registers(['options', 'context', 'ret', 'original'])
+                            var.registers(['original', 'options', 'context', 'ret'])
                             var.put('original', var.get('container').get('partials'))
                             var.get('container').put('partials', var.get('_utils').callprop('extend', Js({}), var.get('original'), var.get('props').get('partials')))
                             var.put('ret', var.get('fn')(var.get('context'), var.get('options')))
@@ -2144,7 +2144,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_197_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'module', '_utils', '__webpack_require__', 'logger'])
+            var.registers(['exports', '__webpack_require__', 'module', 'logger', '_utils'])
             Js('use strict')
             var.get('exports').put('__esModule', Js(True))
             var.put('_utils', var.get('__webpack_require__')(Js(5.0)))
@@ -2163,7 +2163,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_log_199_(level, this, arguments, var=var):
                 var = Scope({'level':level, 'this':this, 'arguments':arguments, 'log':PyJs_log_199_}, var)
-                var.registers(['_len', 'level', '_key', 'message', 'method'])
+                var.registers(['level', 'method', '_len', 'message', '_key'])
                 var.put('level', var.get('logger').callprop('lookupLevel', var.get('level')))
                 if (PyJsStrictNeq(var.get('console',throw=False).typeof(),Js('undefined')) and (var.get('logger').callprop('lookupLevel', var.get('logger').get('level'))<=var.get('level'))):
                     var.put('method', var.get('logger').get('methodMap').get(var.get('level')))
@@ -2186,11 +2186,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_200_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['loggedProperties', 'logUnexpecedPropertyAccessOnce', '_logger', '_interopRequireDefault', 'checkWhiteList', 'exports', 'resultIsAllowed', 'resetLoggedProperties', '_createNewLookupObject', 'createProtoAccessControl', '_logger2', 'module', '_Object$keys', '_Object$create', '__webpack_require__'])
+            var.registers(['resultIsAllowed', 'resetLoggedProperties', 'createProtoAccessControl', 'checkWhiteList', '_Object$create', '_logger2', '_logger', '__webpack_require__', 'loggedProperties', 'logUnexpecedPropertyAccessOnce', 'module', '_interopRequireDefault', 'exports', '_createNewLookupObject', '_Object$keys'])
             @Js
             def PyJsHoisted_createProtoAccessControl_(runtimeOptions, this, arguments, var=var):
                 var = Scope({'runtimeOptions':runtimeOptions, 'this':this, 'arguments':arguments}, var)
-                var.registers(['runtimeOptions', 'defaultPropertyWhiteList', 'defaultMethodWhiteList'])
+                var.registers(['defaultMethodWhiteList', 'defaultPropertyWhiteList', 'runtimeOptions'])
                 var.put('defaultMethodWhiteList', var.get('_Object$create')(var.get(u"null")))
                 var.get('defaultMethodWhiteList').put('constructor', Js(False))
                 var.get('defaultMethodWhiteList').put('__defineGetter__', Js(False))
@@ -2204,7 +2204,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_resultIsAllowed_(result, protoAccessControl, propertyName, this, arguments, var=var):
                 var = Scope({'result':result, 'protoAccessControl':protoAccessControl, 'propertyName':propertyName, 'this':this, 'arguments':arguments}, var)
-                var.registers(['result', 'protoAccessControl', 'propertyName'])
+                var.registers(['protoAccessControl', 'propertyName', 'result'])
                 if PyJsStrictEq(var.get('result',throw=False).typeof(),Js('function')):
                     return var.get('checkWhiteList')(var.get('protoAccessControl').get('methods'), var.get('propertyName'))
                 else:
@@ -2279,7 +2279,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_create_205_(P, D, this, arguments, var=var):
                 var = Scope({'P':P, 'D':D, 'this':this, 'arguments':arguments, 'create':PyJs_create_205_}, var)
-                var.registers(['D', 'P'])
+                var.registers(['P', 'D'])
                 return var.get('$').callprop('create', var.get('P'), var.get('D'))
             PyJs_create_205_._set_name('create')
             var.get('module').put('exports', PyJs_create_205_)
@@ -2287,11 +2287,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_206_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['exports', 'createNewLookupObject', 'module', '_utils', '_Object$create', '__webpack_require__'])
+            var.registers(['createNewLookupObject', '_Object$create', '_utils', '__webpack_require__', 'module', 'exports'])
             @Js
             def PyJsHoisted_createNewLookupObject_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
-                var.registers(['_len', 'sources', '_key'])
+                var.registers(['sources', '_key', '_len'])
                 #for JS loop
                 var.put('_len', var.get('arguments').get('length'))
                 var.put('sources', var.get('Array')(var.get('_len')))
@@ -2313,7 +2313,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_207_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'SafeString', 'exports'])
+            var.registers(['module', 'exports', 'SafeString'])
             @Js
             def PyJsHoisted_SafeString_(string, this, arguments, var=var):
                 var = Scope({'string':string, 'this':this, 'arguments':arguments}, var)
@@ -2337,11 +2337,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_209_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_internalProtoAccess', 'invokePartial', 'initData', 'module', 'Utils', '_interopRequireDefault', '_exception2', '_helpers', 'executeDecorators', '_Object$seal', 'noop', 'checkRevision', 'passLookupPropertyOption', '_interopRequireWildcard', '_Object$keys', '_utils', '__webpack_require__', '_base', 'wrapHelpersToPassLookupProperty', 'exports', 'template', '_internalWrapHelper', '_exception', 'wrapProgram', 'resolvePartial'])
+            var.registers(['invokePartial', '_helpers', 'exports', '_base', '_interopRequireWildcard', '_exception', 'wrapProgram', '_internalProtoAccess', 'resolvePartial', '__webpack_require__', '_utils', '_Object$keys', 'template', 'noop', '_Object$seal', 'passLookupPropertyOption', '_interopRequireDefault', '_internalWrapHelper', 'executeDecorators', 'Utils', 'wrapHelpersToPassLookupProperty', 'initData', 'module', '_exception2', 'checkRevision'])
             @Js
             def PyJsHoisted_checkRevision_(compilerInfo, this, arguments, var=var):
                 var = Scope({'compilerInfo':compilerInfo, 'this':this, 'arguments':arguments}, var)
-                var.registers(['runtimeVersions', 'currentRevision', 'compilerRevision', 'compilerVersions', 'compilerInfo'])
+                var.registers(['compilerRevision', 'compilerVersions', 'currentRevision', 'compilerInfo', 'runtimeVersions'])
                 var.put('compilerRevision', ((var.get('compilerInfo') and var.get('compilerInfo').get('0')) or Js(1.0)))
                 var.put('currentRevision', var.get('_base').get('COMPILER_REVISION'))
                 if ((var.get('compilerRevision')>=var.get('_base').get('LAST_COMPATIBLE_COMPILER_REVISION')) and (var.get('compilerRevision')<=var.get('_base').get('COMPILER_REVISION'))):
@@ -2359,11 +2359,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_template_(templateSpec, env, this, arguments, var=var):
                 var = Scope({'templateSpec':templateSpec, 'env':env, 'this':this, 'arguments':arguments}, var)
-                var.registers(['templateSpec', 'invokePartialWrapper', 'container', 'templateWasPrecompiledWithCompilerV7', 'env', 'ret'])
+                var.registers(['ret', 'env', 'templateWasPrecompiledWithCompilerV7', 'invokePartialWrapper', 'templateSpec', 'container'])
                 @Js
                 def PyJsHoisted_invokePartialWrapper_(partial, context, options, this, arguments, var=var):
                     var = Scope({'partial':partial, 'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['context', 'l', 'i', 'lines', 'result', 'options', 'partial', 'extendedOptions'])
+                    var.registers(['options', 'context', 'partial', 'i', 'l', 'extendedOptions', 'lines', 'result'])
                     if var.get('options').get('hash'):
                         var.put('context', var.get('Utils').callprop('extend', Js({}), var.get('context'), var.get('options').get('hash')))
                         if var.get('options').get('ids'):
@@ -2396,7 +2396,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJsHoisted_ret_(context, this, arguments, var=var):
                     var = Scope({'context':context, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['context', 'depths', 'main', 'options', 'data', 'blockParams'])
+                    var.registers(['options', 'data', 'context', 'main', 'depths', 'blockParams'])
                     @Js
                     def PyJsHoisted_main_(context, this, arguments, var=var):
                         var = Scope({'context':context, 'this':this, 'arguments':arguments}, var)
@@ -2434,7 +2434,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_strict_210_(obj, name, loc, this, arguments, var=var):
                     var = Scope({'obj':obj, 'name':name, 'loc':loc, 'this':this, 'arguments':arguments, 'strict':PyJs_strict_210_}, var)
-                    var.registers(['obj', 'name', 'loc'])
+                    var.registers(['loc', 'name', 'obj'])
                     if (var.get('obj').neg() or var.get('obj').contains(var.get('name')).neg()):
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create((((Js('"')+var.get('name'))+Js('" not defined in '))+var.get('obj')), Js({'loc':var.get('loc')})))
                         raise PyJsTempException
@@ -2443,7 +2443,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_lookupProperty_211_(parent, propertyName, this, arguments, var=var):
                     var = Scope({'parent':parent, 'propertyName':propertyName, 'this':this, 'arguments':arguments, 'lookupProperty':PyJs_lookupProperty_211_}, var)
-                    var.registers(['result', 'parent', 'propertyName'])
+                    var.registers(['parent', 'propertyName', 'result'])
                     var.put('result', var.get('parent').get(var.get('propertyName')))
                     if (var.get('result')==var.get(u"null")):
                         return var.get('result')
@@ -2456,7 +2456,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_lookup_212_(depths, name, this, arguments, var=var):
                     var = Scope({'depths':depths, 'name':name, 'this':this, 'arguments':arguments, 'lookup':PyJs_lookup_212_}, var)
-                    var.registers(['i', 'len', 'depths', 'name', 'result'])
+                    var.registers(['len', 'depths', 'i', 'name', 'result'])
                     var.put('len', var.get('depths').get('length'))
                     #for JS loop
                     var.put('i', Js(0.0))
@@ -2476,7 +2476,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_fn_214_(i, this, arguments, var=var):
                     var = Scope({'i':i, 'this':this, 'arguments':arguments, 'fn':PyJs_fn_214_}, var)
-                    var.registers(['ret', 'i'])
+                    var.registers(['i', 'ret'])
                     var.put('ret', var.get('templateSpec').get(var.get('i')))
                     var.get('ret').put('decorator', var.get('templateSpec').get((var.get('i')+Js('_d'))))
                     return var.get('ret')
@@ -2484,7 +2484,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_program_215_(i, data, declaredBlockParams, blockParams, depths, this, arguments, var=var):
                     var = Scope({'i':i, 'data':data, 'declaredBlockParams':declaredBlockParams, 'blockParams':blockParams, 'depths':depths, 'this':this, 'arguments':arguments, 'program':PyJs_program_215_}, var)
-                    var.registers(['i', 'depths', 'fn', 'data', 'blockParams', 'declaredBlockParams', 'programWrapper'])
+                    var.registers(['data', 'programWrapper', 'i', 'declaredBlockParams', 'fn', 'depths', 'blockParams'])
                     var.put('programWrapper', var.get(u"this").get('programs').get(var.get('i')))
                     var.put('fn', var.get(u"this").callprop('fn', var.get('i')))
                     if (((var.get('data') or var.get('depths')) or var.get('blockParams')) or var.get('declaredBlockParams')):
@@ -2505,7 +2505,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_mergeIfNeeded_217_(param, common, this, arguments, var=var):
                     var = Scope({'param':param, 'common':common, 'this':this, 'arguments':arguments, 'mergeIfNeeded':PyJs_mergeIfNeeded_217_}, var)
-                    var.registers(['obj', 'param', 'common'])
+                    var.registers(['common', 'obj', 'param'])
                     var.put('obj', (var.get('param') or var.get('common')))
                     if ((var.get('param') and var.get('common')) and PyJsStrictNeq(var.get('param'),var.get('common'))):
                         var.put('obj', var.get('Utils').callprop('extend', Js({}), var.get('common'), var.get('param')))
@@ -2517,7 +2517,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_218_(options, this, arguments, var=var):
                     var = Scope({'options':options, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['mergedHelpers', 'options', 'keepHelperInHelpers'])
+                    var.registers(['keepHelperInHelpers', 'options', 'mergedHelpers'])
                     if var.get('options').get('partial').neg():
                         var.put('mergedHelpers', var.get('Utils').callprop('extend', Js({}), var.get('env').get('helpers'), var.get('options').get('helpers')))
                         var.get('wrapHelpersToPassLookupProperty')(var.get('mergedHelpers'), var.get('container'))
@@ -2542,7 +2542,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_219_(i, data, blockParams, depths, this, arguments, var=var):
                     var = Scope({'i':i, 'data':data, 'blockParams':blockParams, 'depths':depths, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['depths', 'data', 'blockParams', 'i'])
+                    var.registers(['blockParams', 'depths', 'data', 'i'])
                     if (var.get('templateSpec').get('useBlockParams') and var.get('blockParams').neg()):
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(Js('must pass block params')))
                         raise PyJsTempException
@@ -2558,11 +2558,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_wrapProgram_(container, i, fn, data, declaredBlockParams, blockParams, depths, this, arguments, var=var):
                 var = Scope({'container':container, 'i':i, 'fn':fn, 'data':data, 'declaredBlockParams':declaredBlockParams, 'blockParams':blockParams, 'depths':depths, 'this':this, 'arguments':arguments}, var)
-                var.registers(['i', 'container', 'depths', 'prog', 'fn', 'data', 'blockParams', 'declaredBlockParams'])
+                var.registers(['data', 'depths', 'prog', 'i', 'declaredBlockParams', 'fn', 'container', 'blockParams'])
                 @Js
                 def PyJsHoisted_prog_(context, this, arguments, var=var):
                     var = Scope({'context':context, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['currentDepths', 'options', 'context'])
+                    var.registers(['options', 'context', 'currentDepths'])
                     var.put('options', (Js({}) if ((var.get('arguments').get('length')<=Js(1.0)) or PyJsStrictEq(var.get('arguments').get('1'),var.get('undefined'))) else var.get('arguments').get('1')))
                     var.put('currentDepths', var.get('depths'))
                     if ((var.get('depths') and (var.get('context')!=var.get('depths').get('0'))) and (PyJsStrictEq(var.get('context'),var.get('container').get('nullContext')) and PyJsStrictEq(var.get('depths').get('0'),var.get(u"null"))).neg()):
@@ -2581,7 +2581,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_resolvePartial_(partial, context, options, this, arguments, var=var):
                 var = Scope({'partial':partial, 'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                var.registers(['context', 'options', 'partial'])
+                var.registers(['options', 'partial', 'context'])
                 if var.get('partial').neg():
                     if PyJsStrictEq(var.get('options').get('name'),Js('@partial-block')):
                         var.put('partial', var.get('options').get('data').get('partial-block'))
@@ -2597,7 +2597,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_invokePartial_(partial, context, options, this, arguments, var=var):
                 var = Scope({'partial':partial, 'context':context, 'options':options, 'this':this, 'arguments':arguments}, var)
-                var.registers(['context', 'currentPartialBlock', 'partialBlock', 'options', 'partial'])
+                var.registers(['options', 'partialBlock', 'context', 'partial', 'currentPartialBlock'])
                 var.put('currentPartialBlock', (var.get('options').get('data') and var.get('options').get('data').get('partial-block')))
                 var.get('options').put('partial', Js(True))
                 if var.get('options').get('ids'):
@@ -2613,7 +2613,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                         @Js
                         def PyJs_partialBlockWrapper_221_(context, this, arguments, var=var):
                             var = Scope({'context':context, 'this':this, 'arguments':arguments, 'partialBlockWrapper':PyJs_partialBlockWrapper_221_}, var)
-                            var.registers(['context', 'options'])
+                            var.registers(['options', 'context'])
                             var.put('options', (Js({}) if ((var.get('arguments').get('length')<=Js(1.0)) or PyJsStrictEq(var.get('arguments').get('1'),var.get('undefined'))) else var.get('arguments').get('1')))
                             var.get('options').put('data', var.get('_base').callprop('createFrame', var.get('options').get('data')))
                             var.get('options').get('data').put('partial-block', var.get('currentPartialBlock'))
@@ -2644,7 +2644,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_initData_(context, data, this, arguments, var=var):
                 var = Scope({'context':context, 'data':data, 'this':this, 'arguments':arguments}, var)
-                var.registers(['context', 'data'])
+                var.registers(['data', 'context'])
                 if (var.get('data').neg() or var.get('data').contains(Js('root')).neg()):
                     var.put('data', (var.get('_base').callprop('createFrame', var.get('data')) if var.get('data') else Js({})))
                     var.get('data').put('root', var.get('context'))
@@ -2654,7 +2654,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_executeDecorators_(fn, prog, container, depths, data, blockParams, this, arguments, var=var):
                 var = Scope({'fn':fn, 'prog':prog, 'container':container, 'depths':depths, 'data':data, 'blockParams':blockParams, 'this':this, 'arguments':arguments}, var)
-                var.registers(['container', 'depths', 'prog', 'fn', 'props', 'data', 'blockParams'])
+                var.registers(['data', 'depths', 'props', 'prog', 'fn', 'container', 'blockParams'])
                 if var.get('fn').get('decorator'):
                     var.put('props', Js({}))
                     var.put('prog', var.get('fn').callprop('decorator', var.get('prog'), var.get('props'), var.get('container'), (var.get('depths') and var.get('depths').get('0')), var.get('data'), var.get('blockParams'), var.get('depths')))
@@ -2665,7 +2665,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_wrapHelpersToPassLookupProperty_(mergedHelpers, container, this, arguments, var=var):
                 var = Scope({'mergedHelpers':mergedHelpers, 'container':container, 'this':this, 'arguments':arguments}, var)
-                var.registers(['mergedHelpers', 'container'])
+                var.registers(['container', 'mergedHelpers'])
                 @Js
                 def PyJs_anonymous_222_(helperName, this, arguments, var=var):
                     var = Scope({'helperName':helperName, 'this':this, 'arguments':arguments}, var)
@@ -2737,7 +2737,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_226_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['module', 'exports', '__webpack_require__', 'isObject'])
+            var.registers(['isObject', 'module', '__webpack_require__', 'exports'])
             var.put('isObject', var.get('__webpack_require__')(Js(40.0)))
             @Js
             def PyJs_anonymous_227_(PyJsArg_247365616c_, this, arguments, var=var):
@@ -2756,7 +2756,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_229_(module, exports, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, 'this':this, 'arguments':arguments}, var)
-            var.registers(['wrapHelper', 'module', 'exports'])
+            var.registers(['module', 'wrapHelper', 'exports'])
             @Js
             def PyJsHoisted_wrapHelper_(helper, transformOptionsFn, this, arguments, var=var):
                 var = Scope({'helper':helper, 'transformOptionsFn':transformOptionsFn, 'this':this, 'arguments':arguments}, var)
@@ -2852,11 +2852,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_240_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_parser2', '_interopRequireDefault', 'exports', '_helpers', '_whitespaceControl', 'parseWithoutProcessing', '_whitespaceControl2', 'Helpers', 'module', '_interopRequireWildcard', '__webpack_require__', '_utils', '_parser', 'yy', 'parse'])
+            var.registers(['_interopRequireWildcard', '_parser2', 'exports', '_parser', 'yy', 'parseWithoutProcessing', '_whitespaceControl2', '_whitespaceControl', 'parse', 'Helpers', '__webpack_require__', '_helpers', 'module', '_interopRequireDefault', '_utils'])
             @Js
             def PyJsHoisted_parseWithoutProcessing_(input, options, this, arguments, var=var):
                 var = Scope({'input':input, 'options':options, 'this':this, 'arguments':arguments}, var)
-                var.registers(['options', 'ast', 'input'])
+                var.registers(['ast', 'options', 'input'])
                 if PyJsStrictEq(var.get('input').get('type'),Js('Program')):
                     return var.get('input')
                 var.get('_parser2').get('default').put('yy', var.get('yy'))
@@ -2874,7 +2874,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_parse_(input, options, this, arguments, var=var):
                 var = Scope({'input':input, 'options':options, 'this':this, 'arguments':arguments}, var)
-                var.registers(['options', 'strip', 'ast', 'input'])
+                var.registers(['ast', 'input', 'strip', 'options'])
                 var.put('ast', var.get('parseWithoutProcessing')(var.get('input'), var.get('options')))
                 var.put('strip', var.get('_whitespaceControl2').get('default').create(var.get('options')))
                 return var.get('strip').callprop('accept', var.get('ast'))
@@ -2908,7 +2908,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_243_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
-                var.registers(['Parser', 'lexer', 'parser'])
+                var.registers(['parser', 'lexer', 'Parser'])
                 @Js
                 def PyJsHoisted_Parser_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments}, var)
@@ -2925,7 +2925,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_245_(yytext, yyleng, yylineno, yy, yystate, PyJsArg_2424_, PyJsArg_5f24_, this, arguments, var=var):
                     var = Scope({'yytext':yytext, 'yyleng':yyleng, 'yylineno':yylineno, 'yy':yy, 'yystate':yystate, '$$':PyJsArg_2424_, '_$':PyJsArg_5f24_, 'this':this, 'arguments':arguments, 'anonymous':PyJs_anonymous_245_}, var)
-                    var.registers(['program', '$$', 'yyleng', '$0', '_$', 'yytext', 'inverse', 'yylineno', 'yy', 'yystate'])
+                    var.registers(['yylineno', 'yytext', 'inverse', '$$', 'program', 'yy', '$0', 'yystate', '_$', 'yyleng'])
                     var.put('$0', (var.get('$$').get('length')-Js(1.0)))
                     while 1:
                         SWITCHED = False
@@ -3235,7 +3235,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_parse_249_(input, this, arguments, var=var):
                     var = Scope({'input':input, 'this':this, 'arguments':arguments, 'parse':PyJs_parse_249_}, var)
-                    var.registers(['stack', 'EOF', 'lstack', 'vstack', 'r', 'input', 'newState', 'a', 'yyleng', 'ranges', 'len', 'lex', 'preErrorSymbol', 'yyval', 'yyloc', 'errStr', 'recovering', 'yylineno', 'action', 'table', 'TERROR', 'popStack', 'state', 'expected', 'symbol', 'p', 'self', 'yytext'])
+                    var.registers(['TERROR', 'a', 'len', 'expected', 'action', 'yyloc', 'preErrorSymbol', 'yyval', 'yylineno', 'yytext', 'EOF', 'newState', 'symbol', 'errStr', 'input', 'ranges', 'vstack', 'popStack', 'stack', 'state', 'recovering', 'yyleng', 'lex', 'r', 'lstack', 'self', 'table', 'p'])
                     @Js
                     def PyJsHoisted_popStack_(n, this, arguments, var=var):
                         var = Scope({'n':n, 'this':this, 'arguments':arguments}, var)
@@ -3388,7 +3388,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     @Js
                     def PyJs_input_254_(this, arguments, var=var):
                         var = Scope({'this':this, 'arguments':arguments, 'input':PyJs_input_254_}, var)
-                        var.registers(['lines', 'ch'])
+                        var.registers(['ch', 'lines'])
                         var.put('ch', var.get(u"this").get('_input').get('0'))
                         var.get(u"this").put('yytext', var.get('ch'), '+')
                         (var.get(u"this").put('yyleng',Js(var.get(u"this").get('yyleng').to_number())+Js(1))-Js(1))
@@ -3409,7 +3409,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     @Js
                     def PyJs_unput_255_(ch, this, arguments, var=var):
                         var = Scope({'ch':ch, 'this':this, 'arguments':arguments, 'unput':PyJs_unput_255_}, var)
-                        var.registers(['ch', 'oldLines', 'len', 'r', 'lines'])
+                        var.registers(['len', 'r', 'ch', 'oldLines', 'lines'])
                         var.put('len', var.get('ch').get('length'))
                         var.put('lines', var.get('ch').callprop('split', JsRegExp('/(?:\\r\\n?|\\n)/g')))
                         var.get(u"this").put('_input', (var.get('ch')+var.get(u"this").get('_input')))
@@ -3460,7 +3460,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     @Js
                     def PyJs_showPosition_261_(this, arguments, var=var):
                         var = Scope({'this':this, 'arguments':arguments, 'showPosition':PyJs_showPosition_261_}, var)
-                        var.registers(['c', 'pre'])
+                        var.registers(['pre', 'c'])
                         var.put('pre', var.get(u"this").callprop('pastInput'))
                         var.put('c', var.get('Array').create((var.get('pre').get('length')+Js(1.0))).callprop('join', Js('-')))
                         return ((((var.get('pre')+var.get(u"this").callprop('upcomingInput'))+Js('\n'))+var.get('c'))+Js('^'))
@@ -3468,7 +3468,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     @Js
                     def PyJs_next_262_(this, arguments, var=var):
                         var = Scope({'this':this, 'arguments':arguments, 'next':PyJs_next_262_}, var)
-                        var.registers(['token', 'i', 'tempMatch', 'index', 'match', 'rules', 'lines', 'col'])
+                        var.registers(['token', 'col', 'index', 'i', 'rules', 'tempMatch', 'match', 'lines'])
                         if var.get(u"this").get('done'):
                             return var.get(u"this").get('EOF')
                         if var.get(u"this").get('_input').neg():
@@ -3562,7 +3562,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     @Js
                     def PyJs_anonymous_270_(yy, yy_, PyJsArg_2461766f6964696e675f6e616d655f636f6c6c6973696f6e73_, YY_START, this, arguments, var=var):
                         var = Scope({'yy':yy, 'yy_':yy_, '$avoiding_name_collisions':PyJsArg_2461766f6964696e675f6e616d655f636f6c6c6973696f6e73_, 'YY_START':YY_START, 'this':this, 'arguments':arguments, 'anonymous':PyJs_anonymous_270_}, var)
-                        var.registers(['YY_START', 'strip', '$avoiding_name_collisions', 'yy_', 'yy', 'YYSTATE'])
+                        var.registers(['strip', 'YYSTATE', 'YY_START', '$avoiding_name_collisions', 'yy_', 'yy'])
                         @Js
                         def PyJsHoisted_strip_(start, end, this, arguments, var=var):
                             var = Scope({'start':start, 'end':end, 'this':this, 'arguments':arguments}, var)
@@ -3810,7 +3810,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_273_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_interopRequireDefault', 'omitLeft', 'exports', 'isNextWhitespace', 'WhitespaceControl', 'module', 'isPrevWhitespace', '_visitor', '__webpack_require__', '_visitor2', 'omitRight'])
+            var.registers(['omitLeft', '_visitor2', 'isNextWhitespace', 'omitRight', 'isPrevWhitespace', 'exports', '__webpack_require__', 'WhitespaceControl', 'module', '_interopRequireDefault', '_visitor'])
             @Js
             def PyJsHoisted_WhitespaceControl_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
@@ -3822,7 +3822,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_isPrevWhitespace_(body, i, isRoot, this, arguments, var=var):
                 var = Scope({'body':body, 'i':i, 'isRoot':isRoot, 'this':this, 'arguments':arguments}, var)
-                var.registers(['prev', 'i', 'body', 'sibling', 'isRoot'])
+                var.registers(['isRoot', 'sibling', 'i', 'body', 'prev'])
                 if PyJsStrictEq(var.get('i'),var.get('undefined')):
                     var.put('i', var.get('body').get('length'))
                 var.put('prev', var.get('body').get((var.get('i')-Js(1.0))))
@@ -3836,7 +3836,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_isNextWhitespace_(body, i, isRoot, this, arguments, var=var):
                 var = Scope({'body':body, 'i':i, 'isRoot':isRoot, 'this':this, 'arguments':arguments}, var)
-                var.registers(['i', 'body', 'next', 'sibling', 'isRoot'])
+                var.registers(['isRoot', 'next', 'sibling', 'i', 'body'])
                 if PyJsStrictEq(var.get('i'),var.get('undefined')):
                     var.put('i', (-Js(1.0)))
                 var.put('next', var.get('body').get((var.get('i')+Js(1.0))))
@@ -3850,7 +3850,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_omitRight_(body, i, multiple, this, arguments, var=var):
                 var = Scope({'body':body, 'i':i, 'multiple':multiple, 'this':this, 'arguments':arguments}, var)
-                var.registers(['i', 'body', 'current', 'original', 'multiple'])
+                var.registers(['original', 'multiple', 'i', 'body', 'current'])
                 var.put('current', var.get('body').get((Js(0.0) if (var.get('i')==var.get(u"null")) else (var.get('i')+Js(1.0)))))
                 if ((var.get('current').neg() or PyJsStrictNeq(var.get('current').get('type'),Js('ContentStatement'))) or (var.get('multiple').neg() and var.get('current').get('rightStripped'))):
                     return var.get('undefined')
@@ -3862,7 +3862,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_omitLeft_(body, i, multiple, this, arguments, var=var):
                 var = Scope({'body':body, 'i':i, 'multiple':multiple, 'this':this, 'arguments':arguments}, var)
-                var.registers(['i', 'body', 'current', 'original', 'multiple'])
+                var.registers(['original', 'multiple', 'i', 'body', 'current'])
                 var.put('current', var.get('body').get(((var.get('body').get('length')-Js(1.0)) if (var.get('i')==var.get(u"null")) else (var.get('i')-Js(1.0)))))
                 if ((var.get('current').neg() or PyJsStrictNeq(var.get('current').get('type'),Js('ContentStatement'))) or (var.get('multiple').neg() and var.get('current').get('leftStripped'))):
                     return var.get('undefined')
@@ -3882,7 +3882,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_274_(program, this, arguments, var=var):
                 var = Scope({'program':program, 'this':this, 'arguments':arguments}, var)
-                var.registers(['program', 'l', 'closeStandalone', 'i', '_isPrevWhitespace', 'body', 'current', 'openStandalone', 'inlineStandalone', 'doStandalone', 'strip', 'isRoot', '_isNextWhitespace'])
+                var.registers(['openStandalone', '_isPrevWhitespace', 'strip', 'isRoot', 'doStandalone', 'closeStandalone', 'program', 'inlineStandalone', 'i', 'body', 'l', '_isNextWhitespace', 'current'])
                 var.put('doStandalone', var.get(u"this").get('options').get('ignoreStandalone').neg())
                 var.put('isRoot', var.get(u"this").get('isRootSeen').neg())
                 var.get(u"this").put('isRootSeen', Js(True))
@@ -3925,7 +3925,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_275_(block, this, arguments, var=var):
                 var = Scope({'block':block, 'this':this, 'arguments':arguments}, var)
-                var.registers(['program', 'lastInverse', 'inverseStrip', 'firstInverse', 'inverse', 'strip', 'block'])
+                var.registers(['inverse', 'strip', 'lastInverse', 'program', 'block', 'inverseStrip', 'firstInverse'])
                 var.get(u"this").callprop('accept', var.get('block').get('program'))
                 var.get(u"this").callprop('accept', var.get('block').get('inverse'))
                 var.put('program', (var.get('block').get('program') or var.get('block').get('inverse')))
@@ -3966,7 +3966,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_277_(node, this, arguments, var=var):
                 var = Scope({'node':node, 'this':this, 'arguments':arguments}, var)
-                var.registers(['strip', 'node'])
+                var.registers(['node', 'strip'])
                 var.put('strip', (var.get('node').get('strip') or Js({})))
                 return Js({'inlineStandalone':Js(True),'open':var.get('strip').get('open'),'close':var.get('strip').get('close')})
             PyJs_anonymous_277_._set_name('anonymous')
@@ -3981,7 +3981,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_278_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['Visitor', '_interopRequireDefault', 'exports', '_exception2', 'visitBlock', 'module', '_exception', '__webpack_require__', 'visitSubExpression', 'visitPartial'])
+            var.registers(['_interopRequireDefault', '_exception', 'visitBlock', '__webpack_require__', 'visitSubExpression', 'module', '_exception2', 'Visitor', 'exports', 'visitPartial'])
             @Js
             def PyJsHoisted_Visitor_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
@@ -4026,7 +4026,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_acceptKey_279_(node, name, this, arguments, var=var):
                     var = Scope({'node':node, 'name':name, 'this':this, 'arguments':arguments, 'acceptKey':PyJs_acceptKey_279_}, var)
-                    var.registers(['name', 'node', 'value'])
+                    var.registers(['node', 'name', 'value'])
                     var.put('value', var.get(u"this").callprop('accept', var.get('node').get(var.get('name'))))
                     if var.get(u"this").get('mutating'):
                         if (var.get('value') and var.get('Visitor').get('prototype').get(var.get('value').get('type')).neg()):
@@ -4037,7 +4037,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_acceptRequired_280_(node, name, this, arguments, var=var):
                     var = Scope({'node':node, 'name':name, 'this':this, 'arguments':arguments, 'acceptRequired':PyJs_acceptRequired_280_}, var)
-                    var.registers(['name', 'node'])
+                    var.registers(['node', 'name'])
                     var.get(u"this").callprop('acceptKey', var.get('node'), var.get('name'))
                     if var.get('node').get(var.get('name')).neg():
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create(((var.get('node').get('type')+Js(' requires '))+var.get('name'))))
@@ -4046,7 +4046,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_acceptArray_281_(array, this, arguments, var=var):
                     var = Scope({'array':array, 'this':this, 'arguments':arguments, 'acceptArray':PyJs_acceptArray_281_}, var)
-                    var.registers(['array', 'l', 'i'])
+                    var.registers(['l', 'i', 'array'])
                     #for JS loop
                     var.put('i', Js(0.0))
                     var.put('l', var.get('array').get('length'))
@@ -4062,7 +4062,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_accept_282_(object, this, arguments, var=var):
                     var = Scope({'object':object, 'this':this, 'arguments':arguments, 'accept':PyJs_accept_282_}, var)
-                    var.registers(['ret', 'object'])
+                    var.registers(['object', 'ret'])
                     if var.get('object').neg():
                         return var.get('undefined')
                     if var.get(u"this").get(var.get('object').get('type')).neg():
@@ -4163,11 +4163,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_296_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['validateClose', 'stripComment', 'prepareBlock', '_interopRequireDefault', 'preparePath', 'exports', '_exception2', 'stripFlags', 'module', '_exception', 'prepareRawBlock', 'prepareProgram', 'prepareMustache', 'SourceLocation', '__webpack_require__', 'id', 'preparePartialBlock'])
+            var.registers(['prepareMustache', 'id', 'prepareBlock', '_exception', 'exports', 'prepareRawBlock', 'SourceLocation', 'stripComment', 'preparePartialBlock', '__webpack_require__', 'validateClose', 'stripFlags', 'module', '_exception2', '_interopRequireDefault', 'prepareProgram', 'preparePath'])
             @Js
             def PyJsHoisted_validateClose_(open, close, this, arguments, var=var):
                 var = Scope({'open':open, 'close':close, 'this':this, 'arguments':arguments}, var)
-                var.registers(['close', 'errorNode', 'open'])
+                var.registers(['errorNode', 'open', 'close'])
                 var.put('close', (var.get('close').get('path').get('original') if var.get('close').get('path') else var.get('close')))
                 if PyJsStrictNeq(var.get('open').get('path').get('original'),var.get('close')):
                     var.put('errorNode', Js({'loc':var.get('open').get('path').get('loc')}))
@@ -4197,7 +4197,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_stripFlags_(open, close, this, arguments, var=var):
                 var = Scope({'open':open, 'close':close, 'this':this, 'arguments':arguments}, var)
-                var.registers(['close', 'open'])
+                var.registers(['open', 'close'])
                 return Js({'open':PyJsStrictEq(var.get('open').callprop('charAt', Js(2.0)),Js('~')),'close':PyJsStrictEq(var.get('close').callprop('charAt', (var.get('close').get('length')-Js(3.0))),Js('~'))})
             PyJsHoisted_stripFlags_.func_name = 'stripFlags'
             var.put('stripFlags', PyJsHoisted_stripFlags_)
@@ -4211,7 +4211,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_preparePath_(data, parts, loc, this, arguments, var=var):
                 var = Scope({'data':data, 'parts':parts, 'loc':loc, 'this':this, 'arguments':arguments}, var)
-                var.registers(['l', 'i', 'dig', 'loc', 'data', 'depth', 'part', 'isLiteral', 'parts', 'original'])
+                var.registers(['original', 'dig', 'part', 'data', 'depth', 'parts', 'loc', 'i', 'isLiteral', 'l'])
                 var.put('loc', var.get(u"this").callprop('locInfo', var.get('loc')))
                 var.put('original', (Js('@') if var.get('data') else Js('')))
                 var.put('dig', Js([]))
@@ -4240,7 +4240,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_prepareMustache_(path, params, hash, open, strip, locInfo, this, arguments, var=var):
                 var = Scope({'path':path, 'params':params, 'hash':hash, 'open':open, 'strip':strip, 'locInfo':locInfo, 'this':this, 'arguments':arguments}, var)
-                var.registers(['params', 'escaped', 'locInfo', 'escapeFlag', 'hash', 'strip', 'open', 'path', 'decorator'])
+                var.registers(['escapeFlag', 'strip', 'decorator', 'escaped', 'params', 'path', 'locInfo', 'open', 'hash'])
                 var.put('escapeFlag', (var.get('open').callprop('charAt', Js(3.0)) or var.get('open').callprop('charAt', Js(2.0))))
                 var.put('escaped', (PyJsStrictNeq(var.get('escapeFlag'),Js('{')) and PyJsStrictNeq(var.get('escapeFlag'),Js('&'))))
                 var.put('decorator', JsRegExp('/\\*/').callprop('test', var.get('open')))
@@ -4250,7 +4250,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_prepareRawBlock_(openRawBlock, contents, close, locInfo, this, arguments, var=var):
                 var = Scope({'openRawBlock':openRawBlock, 'contents':contents, 'close':close, 'locInfo':locInfo, 'this':this, 'arguments':arguments}, var)
-                var.registers(['close', 'program', 'contents', 'openRawBlock', 'locInfo'])
+                var.registers(['contents', 'program', 'openRawBlock', 'locInfo', 'close'])
                 var.get('validateClose')(var.get('openRawBlock'), var.get('close'))
                 var.put('locInfo', var.get(u"this").callprop('locInfo', var.get('locInfo')))
                 var.put('program', Js({'type':Js('Program'),'body':var.get('contents'),'strip':Js({}),'loc':var.get('locInfo')}))
@@ -4260,7 +4260,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_prepareBlock_(openBlock, program, inverseAndProgram, close, inverted, locInfo, this, arguments, var=var):
                 var = Scope({'openBlock':openBlock, 'program':program, 'inverseAndProgram':inverseAndProgram, 'close':close, 'inverted':inverted, 'locInfo':locInfo, 'this':this, 'arguments':arguments}, var)
-                var.registers(['close', 'program', 'inverseStrip', 'locInfo', 'openBlock', 'inverted', 'inverse', 'inverseAndProgram', 'decorator'])
+                var.registers(['inverse', 'program', 'decorator', 'inverted', 'openBlock', 'inverseAndProgram', 'inverseStrip', 'locInfo', 'close'])
                 if (var.get('close') and var.get('close').get('path')):
                     var.get('validateClose')(var.get('openBlock'), var.get('close'))
                 var.put('decorator', JsRegExp('/\\*/').callprop('test', var.get('openBlock').get('open')))
@@ -4285,7 +4285,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_prepareProgram_(statements, loc, this, arguments, var=var):
                 var = Scope({'statements':statements, 'loc':loc, 'this':this, 'arguments':arguments}, var)
-                var.registers(['loc', 'statements', 'lastLoc', 'firstLoc'])
+                var.registers(['loc', 'firstLoc', 'lastLoc', 'statements'])
                 if (var.get('loc').neg() and var.get('statements').get('length')):
                     var.put('firstLoc', var.get('statements').get('0').get('loc'))
                     var.put('lastLoc', var.get('statements').get((var.get('statements').get('length')-Js(1.0))).get('loc'))
@@ -4297,7 +4297,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_preparePartialBlock_(open, program, close, locInfo, this, arguments, var=var):
                 var = Scope({'open':open, 'program':program, 'close':close, 'locInfo':locInfo, 'this':this, 'arguments':arguments}, var)
-                var.registers(['close', 'program', 'locInfo', 'open'])
+                var.registers(['locInfo', 'open', 'close', 'program'])
                 var.get('validateClose')(var.get('open'), var.get('close'))
                 return Js({'type':Js('PartialBlockStatement'),'name':var.get('open').get('path'),'params':var.get('open').get('params'),'hash':var.get('open').get('hash'),'program':var.get('program'),'openStrip':var.get('open').get('strip'),'closeStrip':(var.get('close') and var.get('close').get('strip')),'loc':var.get(u"this").callprop('locInfo', var.get('locInfo'))})
             PyJsHoisted_preparePartialBlock_.func_name = 'preparePartialBlock'
@@ -4332,7 +4332,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_297_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['transformLiteralToPath', 'argEquals', '_interopRequireDefault', 'exports', '_exception2', 'precompile', '_ast2', 'slice', '_ast', 'compile', 'module', '_exception', '_utils', '_Object$create', '__webpack_require__', 'Compiler'])
+            var.registers(['argEquals', 'compile', '_exception', 'slice', '_ast', '_Object$create', 'exports', 'precompile', '__webpack_require__', 'Compiler', '_ast2', 'module', '_exception2', '_interopRequireDefault', '_utils', 'transformLiteralToPath'])
             @Js
             def PyJsHoisted_Compiler_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
@@ -4343,7 +4343,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_precompile_(input, options, env, this, arguments, var=var):
                 var = Scope({'input':input, 'options':options, 'env':env, 'this':this, 'arguments':arguments}, var)
-                var.registers(['ast', 'env', 'environment', 'input', 'options'])
+                var.registers(['options', 'env', 'environment', 'ast', 'input'])
                 if ((var.get('input')==var.get(u"null")) or (PyJsStrictNeq(var.get('input',throw=False).typeof(),Js('string')) and PyJsStrictNeq(var.get('input').get('type'),Js('Program')))):
                     PyJsTempException = JsToPyException(var.get('_exception2').get('default').create((Js('You must pass a string or Handlebars AST to Handlebars.precompile. You passed ')+var.get('input'))))
                     raise PyJsTempException
@@ -4360,11 +4360,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_compile_(input, options, env, this, arguments, var=var):
                 var = Scope({'input':input, 'options':options, 'env':env, 'this':this, 'arguments':arguments}, var)
-                var.registers(['env', 'compileInput', 'input', 'compiled', 'ret', 'options'])
+                var.registers(['options', 'compileInput', 'ret', 'env', 'compiled', 'input'])
                 @Js
                 def PyJsHoisted_compileInput_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments}, var)
-                    var.registers(['templateSpec', 'environment', 'ast'])
+                    var.registers(['ast', 'templateSpec', 'environment'])
                     var.put('ast', var.get('env').callprop('parse', var.get('input'), var.get('options')))
                     var.put('environment', var.get('env').get('Compiler').create().callprop('compile', var.get('ast'), var.get('options')))
                     var.put('templateSpec', var.get('env').get('JavaScriptCompiler').create().callprop('compile', var.get('environment'), var.get('options'), var.get('undefined'), Js(True)))
@@ -4374,7 +4374,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJsHoisted_ret_(context, execOptions, this, arguments, var=var):
                     var = Scope({'context':context, 'execOptions':execOptions, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['context', 'execOptions'])
+                    var.registers(['execOptions', 'context'])
                     if var.get('compiled').neg():
                         var.put('compiled', var.get('compileInput')())
                     return var.get('compiled').callprop('call', var.get(u"this"), var.get('context'), var.get('execOptions'))
@@ -4405,7 +4405,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_anonymous_331_(i, data, blockParams, depths, this, arguments, var=var):
                     var = Scope({'i':i, 'data':data, 'blockParams':blockParams, 'depths':depths, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['depths', 'data', 'blockParams', 'i'])
+                    var.registers(['blockParams', 'depths', 'data', 'i'])
                     if var.get('compiled').neg():
                         var.put('compiled', var.get('compileInput')())
                     return var.get('compiled').callprop('_child', var.get('i'), var.get('data'), var.get('blockParams'), var.get('depths'))
@@ -4417,7 +4417,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_argEquals_(a, b, this, arguments, var=var):
                 var = Scope({'a':a, 'b':b, 'this':this, 'arguments':arguments}, var)
-                var.registers(['a', 'i', 'b'])
+                var.registers(['b', 'i', 'a'])
                 if PyJsStrictEq(var.get('a'),var.get('b')):
                     return Js(True)
                 if ((var.get('_utils').callprop('isArray', var.get('a')) and var.get('_utils').callprop('isArray', var.get('b'))) and PyJsStrictEq(var.get('a').get('length'),var.get('b').get('length'))):
@@ -4434,7 +4434,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_transformLiteralToPath_(sexpr, this, arguments, var=var):
                 var = Scope({'sexpr':sexpr, 'this':this, 'arguments':arguments}, var)
-                var.registers(['literal', 'sexpr'])
+                var.registers(['sexpr', 'literal'])
                 if var.get('sexpr').get('path').get('parts').neg():
                     var.put('literal', var.get('sexpr').get('path'))
                     var.get('sexpr').put('path', Js({'type':Js('PathExpression'),'data':Js(False),'depth':Js(0.0),'parts':Js([(var.get('literal').get('original')+Js(''))]),'original':(var.get('literal').get('original')+Js('')),'loc':var.get('literal').get('loc')}))
@@ -4458,7 +4458,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_equals_298_(other, this, arguments, var=var):
                     var = Scope({'other':other, 'this':this, 'arguments':arguments, 'equals':PyJs_equals_298_}, var)
-                    var.registers(['opcode', 'other', 'otherOpcode', 'i', 'len'])
+                    var.registers(['otherOpcode', 'other', 'len', 'i', 'opcode'])
                     var.put('len', var.get(u"this").get('opcodes').get('length'))
                     if PyJsStrictNeq(var.get('other').get('opcodes').get('length'),var.get('len')):
                         return Js(False)
@@ -4484,7 +4484,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_compile_299_(program, options, this, arguments, var=var):
                     var = Scope({'program':program, 'options':options, 'this':this, 'arguments':arguments, 'compile':PyJs_compile_299_}, var)
-                    var.registers(['program', 'options'])
+                    var.registers(['options', 'program'])
                     var.get(u"this").put('sourceNode', Js([]))
                     var.get(u"this").put('opcodes', Js([]))
                     var.get(u"this").put('children', Js([]))
@@ -4498,7 +4498,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_compileProgram_300_(program, this, arguments, var=var):
                     var = Scope({'program':program, 'this':this, 'arguments':arguments, 'compileProgram':PyJs_compileProgram_300_}, var)
-                    var.registers(['result', 'program', 'guid', 'childCompiler'])
+                    var.registers(['childCompiler', 'guid', 'result', 'program'])
                     var.put('childCompiler', var.get(u"this").get('compiler').create())
                     var.put('result', var.get('childCompiler').callprop('compile', var.get('program'), var.get(u"this").get('options')))
                     var.put('guid', (var.get(u"this").put('guid',Js(var.get(u"this").get('guid').to_number())+Js(1))-Js(1)))
@@ -4510,7 +4510,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_accept_301_(node, this, arguments, var=var):
                     var = Scope({'node':node, 'this':this, 'arguments':arguments, 'accept':PyJs_accept_301_}, var)
-                    var.registers(['ret', 'node'])
+                    var.registers(['node', 'ret'])
                     if var.get(u"this").get(var.get('node').get('type')).neg():
                         PyJsTempException = JsToPyException(var.get('_exception2').get('default').create((Js('Unknown type: ')+var.get('node').get('type')), var.get('node')))
                         raise PyJsTempException
@@ -4522,7 +4522,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_Program_302_(program, this, arguments, var=var):
                     var = Scope({'program':program, 'this':this, 'arguments':arguments, 'Program':PyJs_Program_302_}, var)
-                    var.registers(['bodyLength', 'program', 'i', 'body'])
+                    var.registers(['body', 'bodyLength', 'i', 'program'])
                     var.get(u"this").get('options').get('blockParams').callprop('unshift', var.get('program').get('blockParams'))
                     var.put('body', var.get('program').get('body'))
                     var.put('bodyLength', var.get('body').get('length'))
@@ -4540,7 +4540,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_BlockStatement_303_(block, this, arguments, var=var):
                     var = Scope({'block':block, 'this':this, 'arguments':arguments, 'BlockStatement':PyJs_BlockStatement_303_}, var)
-                    var.registers(['block', 'program', 'inverse', 'type'])
+                    var.registers(['inverse', 'type', 'block', 'program'])
                     var.get('transformLiteralToPath')(var.get('block'))
                     var.put('program', var.get('block').get('program'))
                     var.put('inverse', var.get('block').get('inverse'))
@@ -4567,7 +4567,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_DecoratorBlock_304_(decorator, this, arguments, var=var):
                     var = Scope({'decorator':decorator, 'this':this, 'arguments':arguments, 'DecoratorBlock':PyJs_DecoratorBlock_304_}, var)
-                    var.registers(['program', 'path', 'decorator', 'params'])
+                    var.registers(['params', 'path', 'decorator', 'program'])
                     var.put('program', (var.get('decorator').get('program') and var.get(u"this").callprop('compileProgram', var.get('decorator').get('program'))))
                     var.put('params', var.get(u"this").callprop('setupFullMustacheParams', var.get('decorator'), var.get('program'), var.get('undefined')))
                     var.put('path', var.get('decorator').get('path'))
@@ -4577,7 +4577,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_PartialStatement_305_(partial, this, arguments, var=var):
                     var = Scope({'partial':partial, 'this':this, 'arguments':arguments, 'PartialStatement':PyJs_PartialStatement_305_}, var)
-                    var.registers(['program', 'indent', 'params', 'partialName', 'isDynamic', 'partial'])
+                    var.registers(['partialName', 'program', 'indent', 'params', 'partial', 'isDynamic'])
                     var.get(u"this").put('usePartial', Js(True))
                     var.put('program', var.get('partial').get('program'))
                     if var.get('program'):
@@ -4656,7 +4656,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_ambiguousSexpr_312_(sexpr, program, inverse, this, arguments, var=var):
                     var = Scope({'sexpr':sexpr, 'program':program, 'inverse':inverse, 'this':this, 'arguments':arguments, 'ambiguousSexpr':PyJs_ambiguousSexpr_312_}, var)
-                    var.registers(['program', 'sexpr', 'name', 'inverse', 'isBlock', 'path'])
+                    var.registers(['inverse', 'program', 'path', 'isBlock', 'sexpr', 'name'])
                     var.put('path', var.get('sexpr').get('path'))
                     var.put('name', var.get('path').get('parts').get('0'))
                     var.put('isBlock', ((var.get('program')!=var.get(u"null")) or (var.get('inverse')!=var.get(u"null"))))
@@ -4670,7 +4670,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_simpleSexpr_313_(sexpr, this, arguments, var=var):
                     var = Scope({'sexpr':sexpr, 'this':this, 'arguments':arguments, 'simpleSexpr':PyJs_simpleSexpr_313_}, var)
-                    var.registers(['sexpr', 'path'])
+                    var.registers(['path', 'sexpr'])
                     var.put('path', var.get('sexpr').get('path'))
                     var.get('path').put('strict', Js(True))
                     var.get(u"this").callprop('accept', var.get('path'))
@@ -4679,7 +4679,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_helperSexpr_314_(sexpr, program, inverse, this, arguments, var=var):
                     var = Scope({'sexpr':sexpr, 'program':program, 'inverse':inverse, 'this':this, 'arguments':arguments, 'helperSexpr':PyJs_helperSexpr_314_}, var)
-                    var.registers(['program', 'sexpr', 'params', 'name', 'inverse', 'path'])
+                    var.registers(['inverse', 'program', 'params', 'path', 'sexpr', 'name'])
                     var.put('params', var.get(u"this").callprop('setupFullMustacheParams', var.get('sexpr'), var.get('program'), var.get('inverse')))
                     var.put('path', var.get('sexpr').get('path'))
                     var.put('name', var.get('path').get('parts').get('0'))
@@ -4698,7 +4698,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_PathExpression_315_(path, this, arguments, var=var):
                     var = Scope({'path':path, 'this':this, 'arguments':arguments, 'PathExpression':PyJs_PathExpression_315_}, var)
-                    var.registers(['blockParamId', 'name', 'scoped', 'path'])
+                    var.registers(['path', 'name', 'scoped', 'blockParamId'])
                     var.get(u"this").callprop('addDepth', var.get('path').get('depth'))
                     var.get(u"this").callprop('opcode', Js('getContext'), var.get('path').get('depth'))
                     var.put('name', var.get('path').get('parts').get('0'))
@@ -4749,7 +4749,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_Hash_321_(hash, this, arguments, var=var):
                     var = Scope({'hash':hash, 'this':this, 'arguments':arguments, 'Hash':PyJs_Hash_321_}, var)
-                    var.registers(['hash', 'l', 'i', 'pairs'])
+                    var.registers(['l', 'pairs', 'i', 'hash'])
                     var.put('pairs', var.get('hash').get('pairs'))
                     var.put('i', Js(0.0))
                     var.put('l', var.get('pairs').get('length'))
@@ -4781,7 +4781,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_classifySexpr_324_(sexpr, this, arguments, var=var):
                     var = Scope({'sexpr':sexpr, 'this':this, 'arguments':arguments, 'classifySexpr':PyJs_classifySexpr_324_}, var)
-                    var.registers(['sexpr', 'isBlockParam', 'isHelper', '_name', 'options', 'isSimple', 'isEligible'])
+                    var.registers(['isSimple', 'options', '_name', 'sexpr', 'isBlockParam', 'isEligible', 'isHelper'])
                     var.put('isSimple', var.get('_ast2').get('default').get('helpers').callprop('simpleId', var.get('sexpr').get('path')))
                     var.put('isBlockParam', (var.get('isSimple') and var.get(u"this").callprop('blockParamIndex', var.get('sexpr').get('path').get('parts').get('0')).neg().neg()))
                     var.put('isHelper', (var.get('isBlockParam').neg() and var.get('_ast2').get('default').get('helpers').callprop('helperExpression', var.get('sexpr'))))
@@ -4805,7 +4805,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_pushParams_325_(params, this, arguments, var=var):
                     var = Scope({'params':params, 'this':this, 'arguments':arguments, 'pushParams':PyJs_pushParams_325_}, var)
-                    var.registers(['l', 'i', 'params'])
+                    var.registers(['params', 'l', 'i'])
                     #for JS loop
                     var.put('i', Js(0.0))
                     var.put('l', var.get('params').get('length'))
@@ -4817,7 +4817,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_pushParam_326_(val, this, arguments, var=var):
                     var = Scope({'val':val, 'this':this, 'arguments':arguments, 'pushParam':PyJs_pushParam_326_}, var)
-                    var.registers(['blockParamIndex', 'blockParamChild', 'val', 'value'])
+                    var.registers(['blockParamChild', 'val', 'blockParamIndex', 'value'])
                     var.put('value', (var.get('val').get('value') if (var.get('val').get('value')!=var.get(u"null")) else (var.get('val').get('original') or Js(''))))
                     if var.get(u"this").get('stringParams'):
                         if var.get('value').get('replace'):
@@ -4846,7 +4846,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_setupFullMustacheParams_327_(sexpr, program, inverse, omitEmpty, this, arguments, var=var):
                     var = Scope({'sexpr':sexpr, 'program':program, 'inverse':inverse, 'omitEmpty':omitEmpty, 'this':this, 'arguments':arguments, 'setupFullMustacheParams':PyJs_setupFullMustacheParams_327_}, var)
-                    var.registers(['program', 'sexpr', 'params', 'inverse', 'omitEmpty'])
+                    var.registers(['omitEmpty', 'inverse', 'program', 'params', 'sexpr'])
                     var.put('params', var.get('sexpr').get('params'))
                     var.get(u"this").callprop('pushParams', var.get('params'))
                     var.get(u"this").callprop('opcode', Js('pushProgram'), var.get('program'))
@@ -4860,7 +4860,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_blockParamIndex_328_(name, this, arguments, var=var):
                     var = Scope({'name':name, 'this':this, 'arguments':arguments, 'blockParamIndex':PyJs_blockParamIndex_328_}, var)
-                    var.registers(['param', 'len', 'name', 'depth', 'blockParams'])
+                    var.registers(['len', 'depth', 'name', 'blockParams', 'param'])
                     #for JS loop
                     var.put('depth', Js(0.0))
                     var.put('len', var.get(u"this").get('options').get('blockParams').get('length'))
@@ -4882,7 +4882,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_332_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['_base', '_interopRequireDefault', '_codeGen', 'exports', '_exception2', 'module', '_exception', '_Object$keys', 'JavaScriptCompiler', '_utils', '__webpack_require__', 'Literal', 'strictLookup', '_codeGen2'])
+            var.registers(['_base', '_exception', 'exports', 'strictLookup', '_codeGen2', '__webpack_require__', 'Literal', '_codeGen', 'JavaScriptCompiler', '_exception2', '_interopRequireDefault', '_utils', 'module', '_Object$keys'])
             @Js
             def PyJsHoisted_Literal_(value, this, arguments, var=var):
                 var = Scope({'value':value, 'this':this, 'arguments':arguments}, var)
@@ -4900,7 +4900,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJsHoisted_strictLookup_(requireTerminal, compiler, parts, i, type, this, arguments, var=var):
                 var = Scope({'requireTerminal':requireTerminal, 'compiler':compiler, 'parts':parts, 'i':i, 'type':type, 'this':this, 'arguments':arguments}, var)
-                var.registers(['stack', 'i', 'len', 'type', 'parts', 'compiler', 'requireTerminal'])
+                var.registers(['len', 'requireTerminal', 'compiler', 'parts', 'i', 'type', 'stack'])
                 var.put('stack', var.get('compiler').callprop('popStack'))
                 var.put('len', var.get('parts').get('length'))
                 if var.get('requireTerminal'):
@@ -4945,7 +4945,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_compilerInfo_335_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments, 'compilerInfo':PyJs_compilerInfo_335_}, var)
-                    var.registers(['revision', 'versions'])
+                    var.registers(['versions', 'revision'])
                     var.put('revision', var.get('_base').get('COMPILER_REVISION'))
                     var.put('versions', var.get('_base').get('REVISION_CHANGES').get(var.get('revision')))
                     return Js([var.get('revision'), var.get('versions')])
@@ -4953,7 +4953,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_appendToBuffer_336_(source, location, explicit, this, arguments, var=var):
                     var = Scope({'source':source, 'location':location, 'explicit':explicit, 'this':this, 'arguments':arguments, 'appendToBuffer':PyJs_appendToBuffer_336_}, var)
-                    var.registers(['location', 'explicit', 'source'])
+                    var.registers(['explicit', 'source', 'location'])
                     if var.get('_utils').callprop('isArray', var.get('source')).neg():
                         var.put('source', Js([var.get('source')]))
                     var.put('source', var.get(u"this").get('source').callprop('wrap', var.get('source'), var.get('location')))
@@ -4982,7 +4982,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_compile_339_(environment, options, context, asObject, this, arguments, var=var):
                     var = Scope({'environment':environment, 'options':options, 'context':context, 'asObject':asObject, 'this':this, 'arguments':arguments, 'compile':PyJs_compile_339_}, var)
-                    var.registers(['opcode', 'context', 'l', 'i', 'opcodes', 'decorators', 'fn', '_context', 'programs', 'environment', 'asObject', 'firstLoc', 'ret', 'options'])
+                    var.registers(['options', 'ret', '_context', 'decorators', 'firstLoc', 'asObject', 'context', 'environment', 'programs', 'i', 'fn', 'l', 'opcodes', 'opcode'])
                     var.get(u"this").put('environment', var.get('environment'))
                     var.get(u"this").put('options', var.get('options'))
                     var.get(u"this").put('stringParams', var.get(u"this").get('options').get('stringParams'))
@@ -5089,7 +5089,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_createFunctionContext_341_(asObject, this, arguments, var=var):
                     var = Scope({'asObject':asObject, 'this':this, 'arguments':arguments, 'createFunctionContext':PyJs_createFunctionContext_341_}, var)
-                    var.registers(['params', 'varDeclarations', '_this', 'asObject', 'locals', 'aliasCount', 'source'])
+                    var.registers(['locals', '_this', 'asObject', 'params', 'source', 'varDeclarations', 'aliasCount'])
                     var.put('_this', var.get(u"this"))
                     var.put('varDeclarations', Js(''))
                     var.put('locals', var.get(u"this").get('stackVars').callprop('concat', var.get(u"this").get('registers').get('list')))
@@ -5123,7 +5123,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_mergeSource_343_(varDeclarations, this, arguments, var=var):
                     var = Scope({'varDeclarations':varDeclarations, 'this':this, 'arguments':arguments, 'mergeSource':PyJs_mergeSource_343_}, var)
-                    var.registers(['sourceSeen', 'appendFirst', 'bufferEnd', 'varDeclarations', 'bufferStart', 'isSimple', 'appendOnly'])
+                    var.registers(['isSimple', 'bufferEnd', 'appendOnly', 'varDeclarations', 'appendFirst', 'bufferStart', 'sourceSeen'])
                     var.put('isSimple', var.get(u"this").get('environment').get('isSimple'))
                     var.put('appendOnly', var.get(u"this").get('forceBuffer').neg())
                     var.put('appendFirst', var.get('undefined'))
@@ -5180,7 +5180,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_blockValue_346_(name, this, arguments, var=var):
                     var = Scope({'name':name, 'this':this, 'arguments':arguments, 'blockValue':PyJs_blockValue_346_}, var)
-                    var.registers(['blockName', 'blockHelperMissing', 'name', 'params'])
+                    var.registers(['params', 'blockHelperMissing', 'name', 'blockName'])
                     var.put('blockHelperMissing', var.get(u"this").callprop('aliasable', Js('container.hooks.blockHelperMissing')))
                     var.put('params', Js([var.get(u"this").callprop('contextName', Js(0.0))]))
                     var.get(u"this").callprop('setupHelperArgs', var.get('name'), Js(0.0), var.get('params'))
@@ -5191,7 +5191,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_ambiguousBlockValue_347_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments, 'ambiguousBlockValue':PyJs_ambiguousBlockValue_347_}, var)
-                    var.registers(['blockHelperMissing', 'current', 'params'])
+                    var.registers(['params', 'blockHelperMissing', 'current'])
                     var.put('blockHelperMissing', var.get(u"this").callprop('aliasable', Js('container.hooks.blockHelperMissing')))
                     var.put('params', Js([var.get(u"this").callprop('contextName', Js(0.0))]))
                     var.get(u"this").callprop('setupHelperArgs', Js(''), Js(0.0), var.get('params'), Js(True))
@@ -5250,7 +5250,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_lookupOnContext_354_(parts, falsy, strict, scoped, this, arguments, var=var):
                     var = Scope({'parts':parts, 'falsy':falsy, 'strict':strict, 'scoped':scoped, 'this':this, 'arguments':arguments, 'lookupOnContext':PyJs_lookupOnContext_354_}, var)
-                    var.registers(['i', 'strict', 'scoped', 'parts', 'falsy'])
+                    var.registers(['falsy', 'scoped', 'parts', 'strict', 'i'])
                     var.put('i', Js(0.0))
                     if ((var.get('scoped').neg() and var.get(u"this").get('options').get('compat')) and var.get(u"this").get('lastContext').neg()):
                         var.get(u"this").callprop('push', var.get(u"this").callprop('depthedLookup', var.get('parts').get((var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1)))))
@@ -5261,7 +5261,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_lookupBlockParam_355_(blockParamId, parts, this, arguments, var=var):
                     var = Scope({'blockParamId':blockParamId, 'parts':parts, 'this':this, 'arguments':arguments, 'lookupBlockParam':PyJs_lookupBlockParam_355_}, var)
-                    var.registers(['blockParamId', 'parts'])
+                    var.registers(['parts', 'blockParamId'])
                     var.get(u"this").put('useBlockParams', Js(True))
                     var.get(u"this").callprop('push', Js([Js('blockParams['), var.get('blockParamId').get('0'), Js(']['), var.get('blockParamId').get('1'), Js(']')]))
                     var.get(u"this").callprop('resolvePath', Js('context'), var.get('parts'), Js(1.0))
@@ -5269,7 +5269,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_lookupData_356_(depth, parts, strict, this, arguments, var=var):
                     var = Scope({'depth':depth, 'parts':parts, 'strict':strict, 'this':this, 'arguments':arguments, 'lookupData':PyJs_lookupData_356_}, var)
-                    var.registers(['depth', 'strict', 'parts'])
+                    var.registers(['parts', 'strict', 'depth'])
                     if var.get('depth').neg():
                         var.get(u"this").callprop('pushStackLiteral', Js('data'))
                     else:
@@ -5279,7 +5279,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_resolvePath_357_(type, parts, i, falsy, strict, this, arguments, var=var):
                     var = Scope({'type':type, 'parts':parts, 'i':i, 'falsy':falsy, 'strict':strict, 'this':this, 'arguments':arguments, 'resolvePath':PyJs_resolvePath_357_}, var)
-                    var.registers(['i', 'len', 'strict', 'type', '_this2', 'parts', 'falsy'])
+                    var.registers(['_this2', 'len', 'falsy', 'parts', 'i', 'strict', 'type'])
                     var.put('_this2', var.get(u"this"))
                     if (var.get(u"this").get('options').get('strict') or var.get(u"this").get('options').get('assumeObjects')):
                         var.get(u"this").callprop('push', var.get('strictLookup')((var.get(u"this").get('options').get('strict') and var.get('strict')), var.get(u"this"), var.get('parts'), var.get('i'), var.get('type')))
@@ -5311,7 +5311,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_pushStringParam_360_(string, type, this, arguments, var=var):
                     var = Scope({'string':string, 'type':type, 'this':this, 'arguments':arguments, 'pushStringParam':PyJs_pushStringParam_360_}, var)
-                    var.registers(['string', 'type'])
+                    var.registers(['type', 'string'])
                     var.get(u"this").callprop('pushContext')
                     var.get(u"this").callprop('pushString', var.get('type'))
                     if PyJsStrictNeq(var.get('type'),Js('SubExpression')):
@@ -5384,7 +5384,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_invokeHelper_368_(paramSize, name, isSimple, this, arguments, var=var):
                     var = Scope({'paramSize':paramSize, 'name':name, 'isSimple':isSimple, 'this':this, 'arguments':arguments, 'invokeHelper':PyJs_invokeHelper_368_}, var)
-                    var.registers(['paramSize', 'functionCall', 'helper', 'name', 'possibleFunctionCalls', 'functionLookupCode', 'isSimple', 'nonHelper'])
+                    var.registers(['helper', 'functionCall', 'isSimple', 'paramSize', 'possibleFunctionCalls', 'nonHelper', 'name', 'functionLookupCode'])
                     var.put('nonHelper', var.get(u"this").callprop('popStack'))
                     var.put('helper', var.get(u"this").callprop('setupHelper', var.get('paramSize'), var.get('name')))
                     var.put('possibleFunctionCalls', Js([]))
@@ -5400,7 +5400,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_itemsSeparatedBy_369_(items, separator, this, arguments, var=var):
                     var = Scope({'items':items, 'separator':separator, 'this':this, 'arguments':arguments, 'itemsSeparatedBy':PyJs_itemsSeparatedBy_369_}, var)
-                    var.registers(['result', 'items', 'separator', 'i'])
+                    var.registers(['separator', 'i', 'result', 'items'])
                     var.put('result', Js([]))
                     var.get('result').callprop('push', var.get('items').get('0'))
                     #for JS loop
@@ -5414,14 +5414,14 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_invokeKnownHelper_370_(paramSize, name, this, arguments, var=var):
                     var = Scope({'paramSize':paramSize, 'name':name, 'this':this, 'arguments':arguments, 'invokeKnownHelper':PyJs_invokeKnownHelper_370_}, var)
-                    var.registers(['helper', 'paramSize', 'name'])
+                    var.registers(['helper', 'name', 'paramSize'])
                     var.put('helper', var.get(u"this").callprop('setupHelper', var.get('paramSize'), var.get('name')))
                     var.get(u"this").callprop('push', var.get(u"this").get('source').callprop('functionCall', var.get('helper').get('name'), Js('call'), var.get('helper').get('callParams')))
                 PyJs_invokeKnownHelper_370_._set_name('invokeKnownHelper')
                 @Js
                 def PyJs_invokeAmbiguous_371_(name, helperCall, this, arguments, var=var):
                     var = Scope({'name':name, 'helperCall':helperCall, 'this':this, 'arguments':arguments, 'invokeAmbiguous':PyJs_invokeAmbiguous_371_}, var)
-                    var.registers(['helperCall', 'helper', 'name', 'helperName', 'lookup', 'nonHelper'])
+                    var.registers(['helper', 'helperName', 'helperCall', 'lookup', 'nonHelper', 'name'])
                     var.get(u"this").callprop('useRegister', Js('helper'))
                     var.put('nonHelper', var.get(u"this").callprop('popStack'))
                     var.get(u"this").callprop('emptyHash')
@@ -5438,7 +5438,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_invokePartial_373_(isDynamic, name, indent, this, arguments, var=var):
                     var = Scope({'isDynamic':isDynamic, 'name':name, 'indent':indent, 'this':this, 'arguments':arguments, 'invokePartial':PyJs_invokePartial_373_}, var)
-                    var.registers(['indent', 'params', 'isDynamic', 'name', 'options'])
+                    var.registers(['options', 'indent', 'params', 'isDynamic', 'name'])
                     var.put('params', Js([]))
                     var.put('options', var.get(u"this").callprop('setupParams', var.get('name'), Js(1.0), var.get('params')))
                     if var.get('isDynamic'):
@@ -5462,7 +5462,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_assignToHash_374_(key, this, arguments, var=var):
                     var = Scope({'key':key, 'this':this, 'arguments':arguments, 'assignToHash':PyJs_assignToHash_374_}, var)
-                    var.registers(['context', 'key', 'type', 'hash', 'value', 'id'])
+                    var.registers(['value', 'context', 'type', 'id', 'key', 'hash'])
                     var.put('value', var.get(u"this").callprop('popStack'))
                     var.put('context', var.get('undefined'))
                     var.put('type', var.get('undefined'))
@@ -5484,7 +5484,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_pushId_375_(type, name, child, this, arguments, var=var):
                     var = Scope({'type':type, 'name':name, 'child':child, 'this':this, 'arguments':arguments, 'pushId':PyJs_pushId_375_}, var)
-                    var.registers(['child', 'type', 'name'])
+                    var.registers(['name', 'child', 'type'])
                     if PyJsStrictEq(var.get('type'),Js('BlockParam')):
                         var.get(u"this").callprop('pushStackLiteral', (((((Js('blockParams[')+var.get('name').get('0'))+Js('].path['))+var.get('name').get('1'))+Js(']'))+((Js(' + ')+var.get('JSON').callprop('stringify', (Js('.')+var.get('child')))) if var.get('child') else Js(''))))
                     else:
@@ -5499,7 +5499,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_compileChildren_376_(environment, options, this, arguments, var=var):
                     var = Scope({'environment':environment, 'options':options, 'this':this, 'arguments':arguments, 'compileChildren':PyJs_compileChildren_376_}, var)
-                    var.registers(['children', 'l', 'i', 'child', 'existing', 'index', 'environment', 'compiler', 'options'])
+                    var.registers(['options', 'child', 'children', 'environment', 'compiler', 'index', 'i', 'existing', 'l'])
                     var.put('children', var.get('environment').get('children'))
                     var.put('child', var.get('undefined'))
                     var.put('compiler', var.get('undefined'))
@@ -5533,7 +5533,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_matchExistingProgram_377_(child, this, arguments, var=var):
                     var = Scope({'child':child, 'this':this, 'arguments':arguments, 'matchExistingProgram':PyJs_matchExistingProgram_377_}, var)
-                    var.registers(['len', 'child', 'environment', 'i'])
+                    var.registers(['i', 'len', 'child', 'environment'])
                     #for JS loop
                     var.put('i', Js(0.0))
                     var.put('len', var.get(u"this").get('context').get('environments').get('length'))
@@ -5547,7 +5547,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_programExpression_378_(guid, this, arguments, var=var):
                     var = Scope({'guid':guid, 'this':this, 'arguments':arguments, 'programExpression':PyJs_programExpression_378_}, var)
-                    var.registers(['child', 'guid', 'programParams'])
+                    var.registers(['programParams', 'guid', 'child'])
                     var.put('child', var.get(u"this").get('environment').get('children').get(var.get('guid')))
                     var.put('programParams', Js([var.get('child').get('index'), Js('data'), var.get('child').get('blockParams')]))
                     if (var.get(u"this").get('useBlockParams') or var.get(u"this").get('useDepths')):
@@ -5592,7 +5592,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_replaceStack_383_(callback, this, arguments, var=var):
                     var = Scope({'callback':callback, 'this':this, 'arguments':arguments, 'replaceStack':PyJs_replaceStack_383_}, var)
-                    var.registers(['stack', 'usedLiteral', 'callback', 'prefix', 'top', '_name', 'item', 'createdStack'])
+                    var.registers(['callback', '_name', 'createdStack', 'usedLiteral', 'item', 'prefix', 'stack', 'top'])
                     var.put('prefix', Js([Js('(')]))
                     var.put('stack', var.get('undefined'))
                     var.put('createdStack', var.get('undefined'))
@@ -5635,7 +5635,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_flushInline_386_(this, arguments, var=var):
                     var = Scope({'this':this, 'arguments':arguments, 'flushInline':PyJs_flushInline_386_}, var)
-                    var.registers(['stack', 'i', 'len', 'entry', 'inlineStack'])
+                    var.registers(['len', 'inlineStack', 'i', 'entry', 'stack'])
                     var.put('inlineStack', var.get(u"this").get('inlineStack'))
                     var.get(u"this").put('inlineStack', Js([]))
                     #for JS loop
@@ -5709,7 +5709,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_aliasable_393_(name, this, arguments, var=var):
                     var = Scope({'name':name, 'this':this, 'arguments':arguments, 'aliasable':PyJs_aliasable_393_}, var)
-                    var.registers(['ret', 'name'])
+                    var.registers(['name', 'ret'])
                     var.put('ret', var.get(u"this").get('aliases').get(var.get('name')))
                     if var.get('ret'):
                         (var.get('ret').put('referenceCount',Js(var.get('ret').get('referenceCount').to_number())+Js(1))-Js(1))
@@ -5722,7 +5722,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_setupHelper_394_(paramSize, name, blockHelper, this, arguments, var=var):
                     var = Scope({'paramSize':paramSize, 'name':name, 'blockHelper':blockHelper, 'this':this, 'arguments':arguments, 'setupHelper':PyJs_setupHelper_394_}, var)
-                    var.registers(['paramSize', 'params', 'name', 'callContext', 'blockHelper', 'paramsInit', 'foundHelper'])
+                    var.registers(['callContext', 'paramSize', 'foundHelper', 'params', 'paramsInit', 'name', 'blockHelper'])
                     var.put('params', Js([]))
                     var.put('paramsInit', var.get(u"this").callprop('setupHelperArgs', var.get('name'), var.get('paramSize'), var.get('params'), var.get('blockHelper')))
                     var.put('foundHelper', var.get(u"this").callprop('nameLookup', Js('helpers'), var.get('name'), Js('helper')))
@@ -5732,7 +5732,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_setupParams_395_(helper, paramSize, params, this, arguments, var=var):
                     var = Scope({'helper':helper, 'paramSize':paramSize, 'params':params, 'this':this, 'arguments':arguments, 'setupParams':PyJs_setupParams_395_}, var)
-                    var.registers(['param', 'program', 'paramSize', 'i', 'params', 'ids', 'helper', 'contexts', 'inverse', 'types', 'objectArgs', 'options'])
+                    var.registers(['types', 'ids', 'options', 'inverse', 'helper', 'paramSize', 'program', 'params', 'i', 'contexts', 'objectArgs', 'param'])
                     var.put('options', Js({}))
                     var.put('contexts', Js([]))
                     var.put('types', Js([]))
@@ -5778,7 +5778,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_setupHelperArgs_396_(helper, paramSize, params, useRegister, this, arguments, var=var):
                     var = Scope({'helper':helper, 'paramSize':paramSize, 'params':params, 'useRegister':useRegister, 'this':this, 'arguments':arguments, 'setupHelperArgs':PyJs_setupHelperArgs_396_}, var)
-                    var.registers(['paramSize', 'params', 'helper', 'useRegister', 'options'])
+                    var.registers(['helper', 'options', 'paramSize', 'params', 'useRegister'])
                     var.put('options', var.get(u"this").callprop('setupParams', var.get('helper'), var.get('paramSize'), var.get('params')))
                     var.get('options').put('loc', var.get('JSON').callprop('stringify', var.get(u"this").get('source').get('currentLocation')))
                     var.put('options', var.get(u"this").callprop('objectLiteral', var.get('options')))
@@ -5798,7 +5798,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
             @Js
             def PyJs_anonymous_398_(this, arguments, var=var):
                 var = Scope({'this':this, 'arguments':arguments}, var)
-                var.registers(['reservedWords', 'compilerWords', 'i', 'l'])
+                var.registers(['l', 'reservedWords', 'i', 'compilerWords'])
                 def PyJs_LONG_399_(var=var):
                     return ((((((((((((Js('break else new var')+Js(' case finally return void'))+Js(' catch for switch while'))+Js(' continue function this with'))+Js(' default if throw'))+Js(' delete in try'))+Js(' do instanceof typeof'))+Js(' abstract enum int short'))+Js(' boolean export interface static'))+Js(' byte extends long super'))+Js(' char final native synchronized'))+Js(' class float package throws'))+Js(' const goto private transient'))
                 var.put('reservedWords', (((PyJs_LONG_399_()+Js(' debugger implements protected volatile'))+Js(' double import public let yield await'))+Js(' null true false')).callprop('split', Js(' ')))
@@ -5826,11 +5826,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_401_(module, exports, __webpack_require__, this, arguments, var=var):
             var = Scope({'module':module, 'exports':exports, '__webpack_require__':__webpack_require__, 'this':this, 'arguments':arguments}, var)
-            var.registers(['SourceNode', 'CodeGen', 'exports', 'module', 'SourceMap', '_Object$keys', 'castChunk', '_utils', '__webpack_require__'])
+            var.registers(['SourceMap', 'SourceNode', 'castChunk', 'exports', '__webpack_require__', 'CodeGen', 'module', '_utils', '_Object$keys'])
             @Js
             def PyJsHoisted_castChunk_(chunk, codeGen, loc, this, arguments, var=var):
                 var = Scope({'chunk':chunk, 'codeGen':codeGen, 'loc':loc, 'this':this, 'arguments':arguments}, var)
-                var.registers(['i', 'len', 'codeGen', 'chunk', 'loc', 'ret'])
+                var.registers(['chunk', 'len', 'ret', 'loc', 'i', 'codeGen'])
                 if var.get('_utils').callprop('isArray', var.get('chunk')):
                     var.put('ret', Js([]))
                     #for JS loop
@@ -5865,21 +5865,21 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                     var.put('SourceMap', var.get('require')(Js('source-map')))
                     var.put('SourceNode', var.get('SourceMap').get('SourceNode'))
             except PyJsException as PyJsTempException:
-                PyJsHolder_657272_14675839 = var.own.get('err')
+                PyJsHolder_657272_83782409 = var.own.get('err')
                 var.force_own_put('err', PyExceptionToJs(PyJsTempException))
                 try:
                     pass
                 finally:
-                    if PyJsHolder_657272_14675839 is not None:
-                        var.own['err'] = PyJsHolder_657272_14675839
+                    if PyJsHolder_657272_83782409 is not None:
+                        var.own['err'] = PyJsHolder_657272_83782409
                     else:
                         del var.own['err']
-                    del PyJsHolder_657272_14675839
+                    del PyJsHolder_657272_83782409
             if var.get('SourceNode').neg():
                 @Js
                 def PyJs_anonymous_402_(line, column, srcFile, chunks, this, arguments, var=var):
                     var = Scope({'line':line, 'column':column, 'srcFile':srcFile, 'chunks':chunks, 'this':this, 'arguments':arguments}, var)
-                    var.registers(['column', 'line', 'chunks', 'srcFile'])
+                    var.registers(['srcFile', 'chunks', 'column', 'line'])
                     var.get(u"this").put('src', Js(''))
                     if var.get('chunks'):
                         var.get(u"this").callprop('add', var.get('chunks'))
@@ -5952,7 +5952,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_each_412_(iter, this, arguments, var=var):
                     var = Scope({'iter':iter, 'this':this, 'arguments':arguments, 'each':PyJs_each_412_}, var)
-                    var.registers(['len', 'iter', 'i'])
+                    var.registers(['i', 'len', 'iter'])
                     #for JS loop
                     var.put('i', Js(0.0))
                     var.put('len', var.get(u"this").get('source').get('length'))
@@ -5971,7 +5971,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_wrap_414_(chunk, this, arguments, var=var):
                     var = Scope({'chunk':chunk, 'this':this, 'arguments':arguments, 'wrap':PyJs_wrap_414_}, var)
-                    var.registers(['chunk', 'loc'])
+                    var.registers(['loc', 'chunk'])
                     var.put('loc', ((var.get(u"this").get('currentLocation') or Js({'start':Js({})})) if ((var.get('arguments').get('length')<=Js(1.0)) or PyJsStrictEq(var.get('arguments').get('1'),var.get('undefined'))) else var.get('arguments').get('1')))
                     if var.get('chunk').instanceof(var.get('SourceNode')):
                         return var.get('chunk')
@@ -5981,7 +5981,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_functionCall_415_(fn, type, params, this, arguments, var=var):
                     var = Scope({'fn':fn, 'type':type, 'params':params, 'this':this, 'arguments':arguments, 'functionCall':PyJs_functionCall_415_}, var)
-                    var.registers(['params', 'type', 'fn'])
+                    var.registers(['params', 'fn', 'type'])
                     var.put('params', var.get(u"this").callprop('generateList', var.get('params')))
                     return var.get(u"this").callprop('wrap', Js([var.get('fn'), (((Js('.')+var.get('type'))+Js('(')) if var.get('type') else Js('(')), var.get('params'), Js(')')]))
                 PyJs_functionCall_415_._set_name('functionCall')
@@ -5994,7 +5994,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_objectLiteral_417_(obj, this, arguments, var=var):
                     var = Scope({'obj':obj, 'this':this, 'arguments':arguments, 'objectLiteral':PyJs_objectLiteral_417_}, var)
-                    var.registers(['obj', 'ret', '_this', 'pairs'])
+                    var.registers(['obj', 'pairs', '_this', 'ret'])
                     var.put('_this', var.get(u"this"))
                     var.put('pairs', Js([]))
                     @Js
@@ -6014,7 +6014,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_generateList_419_(entries, this, arguments, var=var):
                     var = Scope({'entries':entries, 'this':this, 'arguments':arguments, 'generateList':PyJs_generateList_419_}, var)
-                    var.registers(['len', 'ret', 'i', 'entries'])
+                    var.registers(['entries', 'i', 'len', 'ret'])
                     var.put('ret', var.get(u"this").callprop('empty'))
                     #for JS loop
                     var.put('i', Js(0.0))
@@ -6030,7 +6030,7 @@ def PyJs_anonymous_0_(this, arguments, var=var):
                 @Js
                 def PyJs_generateArray_420_(entries, this, arguments, var=var):
                     var = Scope({'entries':entries, 'this':this, 'arguments':arguments, 'generateArray':PyJs_generateArray_420_}, var)
-                    var.registers(['ret', 'entries'])
+                    var.registers(['entries', 'ret'])
                     var.put('ret', var.get(u"this").callprop('generateList', var.get('entries')))
                     var.get('ret').callprop('prepend', Js('['))
                     var.get('ret').callprop('add', Js(']'))
@@ -6044,11 +6044,11 @@ def PyJs_anonymous_0_(this, arguments, var=var):
         @Js
         def PyJs_anonymous_422_(modules, this, arguments, var=var):
             var = Scope({'modules':modules, 'this':this, 'arguments':arguments}, var)
-            var.registers(['__webpack_require__', 'installedModules', 'modules'])
+            var.registers(['modules', '__webpack_require__', 'installedModules'])
             @Js
             def PyJsHoisted___webpack_require___(moduleId, this, arguments, var=var):
                 var = Scope({'moduleId':moduleId, 'this':this, 'arguments':arguments}, var)
-                var.registers(['module', 'moduleId'])
+                var.registers(['moduleId', 'module'])
                 if var.get('installedModules').get(var.get('moduleId')):
                     return var.get('installedModules').get(var.get('moduleId')).get('exports')
                 var.put('module', var.get('installedModules').put(var.get('moduleId'), Js({'exports':Js({}),'id':var.get('moduleId'),'loaded':Js(False)})))
